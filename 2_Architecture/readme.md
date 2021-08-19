@@ -1,0 +1,2 @@
+# Architecture
+### The architecture contains the design of the project. High level or Behavioral diagrams and Low level or Structure diagrams are designed for the project. In each level four diagrams demonstrate the entire working of the project.
