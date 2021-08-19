@@ -31,3 +31,23 @@ All digital systems constructed by only three basic logic gates. These basic gat
 ![Combinational Logic Circuit](https://user-images.githubusercontent.com/86546222/130079774-3d461e52-feb2-4038-a1a4-851c86a8c467.gif)|![Sequential Logic Circuit](https://user-images.githubusercontent.com/86546222/130079845-ff3f1066-ca4f-4df8-af16-4c456693ed5c.jpg)
 ## SWOT Analysis
 ![swot](https://user-images.githubusercontent.com/81547783/130110608-f2dbb56c-6cb0-43a0-b6fc-5f15741e3337.jpg)
+
+## 5Ws and 1H
+
+### Who:
+Intended for people who want to work with digital logic circuits and understand it's working.
+
+### What:
+It provides working of various digital circuits.
+
+### When:
+It can be used to get digital outputs to design combnational digital circuits.
+
+### Where:
+It can be used in simple mini-projects and lab work
+
+### Why:
+This gives a basic building block for developing major digital circuits.
+
+### How:
+we take the input for every circuit, apply logical calculations for it and give the required output.
