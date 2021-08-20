@@ -1,4 +1,3 @@
-# GENESIS_MINIPROJECT_TEAM20
 # DIGITAL ELECTRONICS MANUAL
 ## Introduction
 ### What is Digital Electronics?
