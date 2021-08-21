@@ -1,5 +1,5 @@
 #include "unity.h"
-#include "and.h" /** add your respective .h files here*/
+#include "gates.h" /** add your respective .h files here*/
 
 void setUp(void){}
 
