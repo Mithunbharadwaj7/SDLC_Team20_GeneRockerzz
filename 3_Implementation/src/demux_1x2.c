@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "demux.h"
 
-error_t getDataFromFile1 (demux_1x2 *_values){
+error_t getDataFromFile3 (demux_1x2 *_values){
     FILE *fp = NULL;
     fp = fopen ("demux.txt" , "r");
     if (fp == NULL)
