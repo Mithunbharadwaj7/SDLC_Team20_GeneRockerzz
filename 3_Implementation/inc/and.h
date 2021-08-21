@@ -24,7 +24,7 @@ typedef enum error_t{
 
 error_t getDataFromFile1 (and_two *_values);
 error_t getDataFromFile2 (and_three *_values);
-error_t and_two_input (and_two *_value);
-error_t and_three_input (and_three *_value); 
+error_t and_two_input (and_two *_values);
+error_t and_three_input (and_three *_values); 
 
 #endif
