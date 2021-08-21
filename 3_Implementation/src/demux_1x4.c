@@ -39,7 +39,7 @@ error_t getDataFromFile1x4 (demux_1x4 *_values)
     return 0;
 }
 
-error_t demux_1x4 (demux_1x4 *_values)
+error_t DEMUX_1x4 (demux_1x4 *_values)
     {
         if(_values->_en)
             {
