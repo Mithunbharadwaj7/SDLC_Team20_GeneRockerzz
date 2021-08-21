@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "demux.h"
 
 error_t getDataFromFile2 (demux_1x4 *_values)
     {
         FILE *fp = NULL;
-        fp = fopen ("demux_1x4.txt" , "r");
+        fp = fopen ("demux.txt" , "r");
         if (fp == NULL)
             {
                 printf("File not found!"); 
@@ -40,7 +39,7 @@ error_t getDataFromFile2 (demux_1x4 *_values)
     return 0;
 }
 
-error_t DEMUX_1x8 (demux_1x4 *_values)
+error_t DEMUX_1x4 (demux_1x4 *_values)
     {
         if(_values->_en)
             {
