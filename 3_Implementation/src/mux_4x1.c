@@ -15,7 +15,7 @@ error_t getDataFromFile2 (mux_4x1 *_values)
 
         else
             {
-                for (int i=0; i<12; i++)
+                for (int i=0; i<2; i++)
                     {
                         char str[100];
                         fgets (str, 60, fp);
