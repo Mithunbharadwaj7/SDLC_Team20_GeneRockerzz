@@ -115,5 +115,7 @@ we take the input for every circuit, apply logical calculations for it and give 
 |HL3|Multiplexer and demultiplexer working|Implemented|
 |HL4|Encoder and decoder working|Implemented|
 |HL5|Latches and flip flop working|Implemented|
+|HL6|Working of adders and subtractors|Implemented|
+|HL7|Counters concept|Implemented| 
 
 
