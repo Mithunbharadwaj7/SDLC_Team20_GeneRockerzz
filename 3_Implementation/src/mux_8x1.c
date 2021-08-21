@@ -82,7 +82,7 @@ error_t MUX_8x1 (mux_8x1 *_values){
             _values->_res_8x1 = _values->_d6;
         }
         if(_values->_s1==1 && _values->_s2==1 && _values->_s3==1) {
-            _values->_res_8x1 = _values->_d0;
+            _values->_res_8x1 = _values->_d7;
         }
      
     }
