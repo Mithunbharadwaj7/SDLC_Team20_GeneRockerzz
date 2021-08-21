@@ -41,6 +41,13 @@ Full Adder | Full Subtractor
 4*2 Encoder | 2*4 Decoder
 8*3 Encoder | 3*8 Decoder
 
+
+4.A Comparator is a combinational circuit that gives output in terms of A>B, A<B, and A=B. This is entirely expected from the name. A digital comparator’s purpose is to compare numbers and represent their relationship with each other. 
+|Types of Comparators
+|:--:|
+One bit comparator 
+Two bit comparator 
+
 ## Sequential Logic Circuits 
 
 1.Digital flip-flops are memory devices used for storing binary data in sequential logic circuits. Latches are level sensitive and Flip-flops are edge sensitive. It means that the latch’s output change with a change in input levels and the flip-flop’s output only change when there is an edge of controlling signal.
