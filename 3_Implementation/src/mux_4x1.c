@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "mux.h"
 
-error_t getDataFromFile2 (mux_4x1 *_values)
+error_t getDataFromFile4x1 (mux_4x1 *_values)
 {
     
     FILE *fp = NULL;
@@ -15,7 +15,7 @@ error_t getDataFromFile2 (mux_4x1 *_values)
 
         else
             {
-                for (int i=0; i<2; i++)
+                for (int i=0; i<7; i++)
                     {
                         char str[100];
                         fgets (str, 60, fp);
