@@ -93,7 +93,7 @@ int main(){
             getDataFromFile2 (&data2);
             and_three_input (&data2);
             printf("The result of AND gate with three inputs is %d\n",data2._res2);
-        }/** add functions in your respective else-if conditions and printf statements in your respective .c files*/
+        }
         else if (ch == 'c'){
             getDataFromFile3 (&data3);
             or_two_input (&data3);

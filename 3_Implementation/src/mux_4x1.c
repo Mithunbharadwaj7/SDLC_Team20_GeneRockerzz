@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "mux.h"
 
-error_t getDataFromFile4x1 (mux_4x1 *_values)
+error_mux getDataFromFile4x1 (mux_4x1 *_values)
 {
     
     FILE *fp = NULL;
@@ -10,7 +10,7 @@ error_t getDataFromFile4x1 (mux_4x1 *_values)
         if (fp == NULL)
             {
                 printf("File not found!"); 
-                return FAIL;
+                return FAIL_mux;
             }
 
         else
@@ -51,45 +51,50 @@ error_t getDataFromFile4x1 (mux_4x1 *_values)
     return 0;
 }
 
-error_t MUX_4x1 (mux_4x1 *_values)
+error_mux MUX_4x1 (mux_4x1 *_values)
 {
     if(_values->_en==1)
         {
             if(_values->_s1==0 & _values->_s2==0)
                 {
                     _values->_res_4x1 = _values->_d0;
+                    printf("%d ",_values->_res_4x1);
                 }
             if(_values->_s1==0 & _values->_s2==1) 
                 {
                     _values->_res_4x1 = _values->_d1;
+                    printf("%d ",_values->_res_4x1);
                 }
             if(_values->_s1==1 & _values->_s2==0) 
                 {
                     _values->_res_4x1 = _values->_d2;
+                    printf("%d ",_values->_res_4x1);
                 }
             if(_values->_s1==1 & _values->_s2==1) 
                 {
                     _values->_res_4x1 = _values->_d3;
+                    printf("%d ",_values->_res_4x1);
                 }
         }
 
     else if (~(_values->_en))
         {
             _values->_res_4x1 = 0;
+            printf("%d ",_values->_res_4x1);
         }
 
     else if (_values == NULL)
         {
-            return FAIL;
+            return FAIL_mux;
         }
 
     else if (_values->_res_4x1 < 0)
         {
-            return ERR_NEGATIVE;
+            return ERR_NEGATIVE_mux;
         }
     else
         {
-            return PASS;
+            return PASS_mux;
         }
 
     return 0;

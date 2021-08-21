@@ -1,13 +1,13 @@
 #include "Subtractor.h"
 #include<stdio.h>
 
-error_t getData_2 (half_subtractor *values){
+error_sub getData_2 (half_subtractor *values){
     FILE *fp = NULL;
     fp = fopen ("Subtractor.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL;
+       return FAIL_sub;
     }
     else
     {
@@ -29,13 +29,13 @@ error_t getData_2 (half_subtractor *values){
     return 0;
 }
 
-error_t getData_3 (full_subtractor *values){
+error_sub getData_3 (full_subtractor *values){
     FILE *fp = NULL;
     fp = fopen ("Subtractor.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL;
+       return FAIL_sub;
     }
     else
     {

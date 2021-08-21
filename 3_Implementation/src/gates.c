@@ -386,7 +386,7 @@ error_t and_two_input (and_two *_values){
         return FAIL_1;
     }
     else if (_values->_res1 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -400,7 +400,7 @@ error_t and_three_input (and_three *_values){
         return FAIL_1;
     }
     else if (_values->_res2 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -414,7 +414,7 @@ error_t or_two_input (or_two *_values){
         return FAIL_1;
     }
     else if (_values->_res3 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -428,7 +428,7 @@ error_t or_three_input (or_three *_values){
         return FAIL_1;
     }
     else if (_values->_res4 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -448,7 +448,7 @@ error_t not_two_input (not_two *_values){
         return FAIL_1;
     }
     else if (_values->_res5 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -461,7 +461,7 @@ error_t nand_two_input (nand_two *_values){
         return FAIL_1;
     }
     else if (_values->_res6 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -475,7 +475,7 @@ error_t nand_three_input (nand_three *_values){
         return FAIL_1;
     }
     else if (_values->_res7 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -489,7 +489,7 @@ error_t nor_two_input (nor_two *_values){
         return FAIL_1;
     }
     else if (_values->_res8 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -503,7 +503,7 @@ error_t nor_three_input (nor_three *_values){
         return FAIL_1;
     }
     else if (_values->_res9 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -517,7 +517,7 @@ error_t xor_two_input (xor_two *_values){
         return FAIL_1;
     }
     else if (_values->_res10 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -531,7 +531,7 @@ error_t xor_three_input (xor_three *_values){
         return FAIL_1;
     }
     else if (_values->_res11 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -545,7 +545,7 @@ error_t xnor_two_input (xnor_two *_values){
         return FAIL_1;
     }
     else if (_values->_res12 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;
@@ -559,7 +559,7 @@ error_t xnor_three_input (xnor_three *_values){
         return FAIL_1;
     }
     else if (_values->_res13 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_1;
     }
     else{
         return PASS_1;

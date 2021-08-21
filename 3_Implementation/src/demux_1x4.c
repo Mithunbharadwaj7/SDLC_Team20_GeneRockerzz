@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "demux.h"
 
-error_t getDataFromFile1x4 (demux_1x4 *_values)
+error_demux getDataFromFile1x4 (demux_1x4 *_values)
     {
         FILE *fp = NULL;
         fp = fopen ("demux.txt" , "r");
         if (fp == NULL)
             {
                 printf("File not found!"); 
-                return FAIL;
+                return FAIL_demux;
             }
 
         else
@@ -39,7 +39,7 @@ error_t getDataFromFile1x4 (demux_1x4 *_values)
     return 0;
 }
 
-error_t DEMUX_1x4 (demux_1x4 *_values)
+error_demux DEMUX_1x4 (demux_1x4 *_values)
     {
         if(_values->_en)
             {
@@ -47,26 +47,28 @@ error_t DEMUX_1x4 (demux_1x4 *_values)
                 _values->_res2 = ~(_values->_s1) *  (_values->_s2) * _values->_din;
                 _values->_res3 =  (_values->_s1) * ~(_values->_s2) * _values->_din;
                 _values->_res4 =  (_values->_s1) *  (_values->_s2) * _values->_din;
+                printf("%d %d %d %d ",_values->_res1,_values->_res2,_values->_res3,_values->_res4)
             }
 
         else if(~(_values->_en))
             {
-                _values->_res1 = _values->_res2 = _values->_res3 = _values->_res4 = _values->_res5 = _values->_res6 = _values->_res7 = _values->_res8 = 0;
+                _values->_res1 = _values->_res2 = _values->_res3 = _values->_res4 = 0;
+                printf("%d ",_values->_res1);
             }
     
         else if (_values == NULL)
             {
-                return FAIL;
+                return FAIL_demux;
             }
 
-        else if (_values->_res1 < 0 || _values->_res2 < 0 || _values->_res3 < 0 || _values->_res4 < 0 || _values->_res5 < 0 || _values->_res6 < 0 || _values->_res7 < 0 || _values->_res8 < 0)
+        else if (_values->_res1 < 0 || _values->_res2 < 0 || _values->_res3 < 0 || _values->_res4 < 0 )
             {
-                return ERR_NEGATIVE;
+                return ERR_NEGATIVE_demux;
             }
 
         else
             {
-                return PASS;
+                return PASS_demux;
             }
 
     return 0;

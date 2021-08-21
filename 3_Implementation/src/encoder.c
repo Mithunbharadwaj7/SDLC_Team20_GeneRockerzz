@@ -1,12 +1,12 @@
 #include "conversion.h"
 
-error_t getData_5 (enco_21 *values){
+error_en getData_5 (enco_21 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL;
+       return FAIL_en;
     }
     else
     {
@@ -28,13 +28,13 @@ error_t getData_5 (enco_21 *values){
     return 0;
 }
 
-error_t getData_6 (enco_42 *values){
+error_en getData_6 (enco_42 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL;
+       return FAIL_en;
     }
     else
     {
@@ -62,13 +62,13 @@ error_t getData_6 (enco_42 *values){
     return 0;
 }
 
-error_t getData_7 (enco_83 *values){
+error_en getData_7 (enco_83 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL;
+       return FAIL_en;
     }
     else
     {
