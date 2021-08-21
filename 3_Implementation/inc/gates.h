@@ -87,8 +87,8 @@ typedef struct xnor_three{
 }xnor_three;
 
 typedef enum error_t{
-    PASS = 0,
-    FAIL = -1,
+    PASS_1 = 0,
+    FAIL_1 = -1,
     ERR_NEGATIVE = -2
 }error_t;
 
