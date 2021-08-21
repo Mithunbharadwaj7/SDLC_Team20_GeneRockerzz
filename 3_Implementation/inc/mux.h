@@ -45,9 +45,9 @@ typedef enum error_t{
     ERR_NEGATIVE = -2
 }error_t;
 
-error_t getDataFromFile1 (mux_2x1 *_values);
-error_t getDataFromFile2 (mux_4x1 *_values);
-error_t getDataFromFile3 (mux_8x1 *_values);
+error_t getDataFromFile2x1 (mux_2x1 *_values);
+error_t getDataFromFile4x1 (mux_4x1 *_values);
+error_t getDataFromFile8x1 (mux_8x1 *_values);
 error_t MUX_2x1 (mux_2x1 *_value);
 error_t MUX_4X1 (mux_4x1 *_value);
 error_t MUX_8X1 (mux_8x1 *_value);
