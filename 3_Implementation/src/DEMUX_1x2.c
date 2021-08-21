@@ -11,7 +11,7 @@ error_t getDataFromFile1 (demux_1x2 *_values){
     }
     else
     {
-    for (int i=0; i<6; i++){
+    for (int i=0; i<2; i++){
         char str[100];
         fgets (str, 60, fp);
         switch (i)
@@ -22,16 +22,6 @@ error_t getDataFromFile1 (demux_1x2 *_values){
             case 1:
                 _values->_s1 = atoi(str);
                 break;
-            case 2:
-                _values->_s2 = atoi(str);
-                break;
-            case 3:
-                _values->_s3 = atoi(str);
-                break;
-            case 4:
-                _values->_din = atoi(str);
-                break;
-        }
     }
     fclose(fp);
     }
@@ -56,5 +46,5 @@ error_t DEMUX_1x8 (demux_1x2 *_values){
     else{
         return PASS;
     }
-    return 0;
+  //  return 0;
 }
