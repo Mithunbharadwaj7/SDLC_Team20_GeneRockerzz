@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "gates.h"
+#include "adder.h"
 
 int main(){
     and_two data1;
@@ -7,6 +8,11 @@ int main(){
     or_two data3;
     or_three data4;
     not_two data5;
+
+
+    hf_adder data_hf;
+    fl_adder data_fl;
+    
     char ch = 'C';
     printf ("\nEnter C to compute combinational circuit parameters\n"
              "------------------------------------------------------------------------\n"
@@ -100,10 +106,12 @@ int main(){
 
         }
         else if (ch == 'A'){
-
+            getDataFromHalfAdderFile (&data_hf);
+            halfadder (&data_hf);
         }
         else if (ch =='B'){
-
+            getDataFromFullAdderFile (&data_fl);
+            fulladder (&data_fl);
         }
         else if (ch == 'C'){
 
