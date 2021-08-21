@@ -5,7 +5,7 @@
 
 
 Digital electronics is a field of electronics involving the study of digital signals. These circuits usually  made from large assemblies of logic gates, often packaged in integrated circuits. Digital systems constructed by using logic gates. These gates are the AND, OR, NOT, NAND, NOR, EXOR and EXNOR gates.The OR gate is an electronic circuit that gives a high output if one or more of its inputs are high.
-In digital circuits, an adder–subtractor is a circuit that is capable of adding or subtracting numbers. Similarly to the half adder, a half subtractor subtracts two 1 bit binary numbers to give two outputs, difference and borrow.
+In digital circuits, an adder–subtractor is a circuit that is capable of adding or subtracting numbers. Similarly to the half adder, a half subtractor subtracts two 1 bit binary numbers to give two outputs, difference and borrow.An adder is a digital circuit that performs addition of numbers. In processor it is used to calculate addresses, table indices, and similar operations. It can be constructed for many numerical representations, such as binary-coded decima
 
 ### Basic Logic & Universal Gates in Digital Electronics 
 
@@ -15,7 +15,15 @@ All digital systems constructed by only three basic logic gates. These basic gat
 
 ## Data Transmissions
 
-1.A multiplexer (Mux) is a combinational circuit that uses several data inputs to generate a single output. A demultiplexer (Demux) is also a combinational circuit that uses single input that can be directed throughout several outputs.The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
+1.Adder is a digital circuit that performs addition of numbers. In processor it is used to calculate addresses, table indices, and similar operations. It can be constructed for many numerical representations, such as binary-coded decimal.
+A subtractor is a combinational circuit that performs subtraction of two bits, one is minuend and other is subtrahend, taking into account borrow of the previous adjacent lower minuend bit. This circuit has three inputs and two outputs.
+
+|Types of Adders|Types of Subtractors|
+|:--:|:--:|
+Half Adder | Half Subtractor
+Full Adder | Full Subtractor
+
+2.A multiplexer (Mux) is a combinational circuit that uses several data inputs to generate a single output. A demultiplexer (Demux) is also a combinational circuit that uses single input that can be directed throughout several outputs.The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
 
 |Types of multiplexers|Types of Demultiplexers|
 |:--:|:--:|
@@ -23,7 +31,8 @@ All digital systems constructed by only three basic logic gates. These basic gat
 4-1 Multiplexer | 1-4 Demultiplexer 
 8-1 Multiplexer | 1-8 Demultiplexer 
 
-2.Encoder is a device that converts the active data signal into a coded message format. However, a decoder performs inverse operation of the encoder and thus converts the coded input into original data input.
+3.Encoder is a device that converts the active data signal into a coded message format. However, a decoder performs inverse operation of the encoder and thus converts the coded input into original data input.
+
 
 
 |Types of Encoders|Types of decoders|
