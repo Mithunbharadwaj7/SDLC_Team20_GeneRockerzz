@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "gates.h"
 #include "adder.h"
+#include "Subtractor.h"
+#include "mux.h"
+#include "demux.h"
 
 int main(){
     and_two data1;
@@ -19,6 +22,16 @@ int main(){
 
     hf_adder data_hf;
     fl_adder data_fl;
+    half_subtractor data_hs;
+    full_subtractor data_fs;
+
+    mux_2x1 data_2x1_MUX;
+    mux_4x1 data_4x1_MUX;
+    mux_8x1 data_8x1_MUX;
+
+    demux_1x2  data_1x2_DEMUX;
+    demux_1x4  data_1x4_DEMUX;
+    demux_1x8  data_1x8_DEMUX;
     
     char ch = 'C';
     printf ("\nEnter C to compute combinational circuit parameters\n"
@@ -140,28 +153,38 @@ int main(){
             fulladder (&data_fl);
         }
         else if (ch == 'C'){
+            getData_2 (&data_hs);
+            half_Subtractor (&data_hs);
 
         }
         else if (ch == 'D'){
+            getData_3 (&data_fs);
+            full_Subtractor (&data_fs);
 
         }
         else if (ch == '1'){
-
+            getDataFromFile2x1(&data_2x1_MUX);
+            MUX_2x1(&data_2x1_MUX);
         }
         else if (ch == '2'){
-
+            getDataFromFile4x1(&data_4x1_MUX);
+            MUX_4x1(&data_4x1_MUX);
         }
         else if (ch == '3'){
-
+            getDataFromFile8x1(&data_8x1_MUX);
+            MUX_8x1(&data_8x1_MUX);
         }
         else if (ch == '4'){
-
+            getDataFromFile1x2(&data_1x2_DEMUX);
+            DEMUX_1x2(&data_1x2_DEMUX);
         }
         else if (ch == '5'){
-
+            getDataFromFile1x4(&data_1x4_DEMUX);
+            DEMUX_1x4(&data_1x4_DEMUX);
         }
         else if (ch == '6'){
-
+            getDataFromFile1x8(&data_1x8_DEMUX);
+            DEMUX_1x8(&data_1x8_DEMUX);
         }
         else if (ch == 'o'){
 
