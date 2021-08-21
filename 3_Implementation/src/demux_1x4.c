@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "demux.h"
 
-error_t getDataFromFile2 (demux_1x4 *_values)
+error_t getDataFromFile1x4 (demux_1x4 *_values)
     {
         FILE *fp = NULL;
         fp = fopen ("demux.txt" , "r");
@@ -13,7 +13,7 @@ error_t getDataFromFile2 (demux_1x4 *_values)
 
         else
             {
-                for (int i=0; i<2; i++)
+                for (int i=0; i<4; i++)
                     {
                         char str[100];
                         fgets (str, 60, fp);
@@ -39,7 +39,7 @@ error_t getDataFromFile2 (demux_1x4 *_values)
     return 0;
 }
 
-error_t DEMUX_1x4 (demux_1x4 *_values)
+error_t demux_1x4 (demux_1x4 *_values)
     {
         if(_values->_en)
             {
