@@ -11,7 +11,7 @@ error_t getDataFromFile1 (mux_2x1 *_values){
     }
     else
     {
-    for (int i=0; i<12; i++){
+    for (int i=0; i<4; i++){
         char str[100];
         fgets (str, 60, fp);
         switch (i)
@@ -22,10 +22,10 @@ error_t getDataFromFile1 (mux_2x1 *_values){
             case 1:
                 _values->_s1 = atoi(str);
                 break;
-            case 4:
+            case 2:
                 _values->_d0 = atoi(str);
                 break;
-            case 5:
+            case 3:
                 _values->_d1 = atoi(str);
                 break;
         }
