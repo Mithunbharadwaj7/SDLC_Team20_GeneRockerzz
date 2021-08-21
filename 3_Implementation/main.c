@@ -1,9 +1,12 @@
 #include <stdio.h>
-#include "and.h"
+#include "gates.h"
 
 int main(){
     and_two data1;
     and_three data2;
+    or_two data3;
+    or_three data4;
+    not_two data5;
     char ch = 'C';
     printf ("\nEnter C to compute combinational circuit parameters\n"
              "------------------------------------------------------------------------\n"
@@ -18,15 +21,14 @@ int main(){
                   "                                       | c : OR gate with two inputs\n"
                   "                                       | d : OR gate with three inputs\n"
                   "                                       | e : NOT gate with two inputs\n"
-                  "                                       | f : NOT gate with three inputs\n"
-                  "                                       | g : NAND gate with two inputs\n"
-                  "                                       | h : NAND gate with three inputs\n"
-                  "                                       | i : NOR gate with two inputs\n"
-                  "                                       | j : NOR gate with three inputs\n"
-                  "                                       | k : XOR gate with two inputs\n"
-                  "                                       | l : XOR gate with three inputs\n"
-                  "                                       | m : XNOR gate with two inputs\n"
-                  "                                       | n : XNOR gate with three inputs\n"
+                  "                                       | f : NAND gate with two inputs\n"
+                  "                                       | g : NAND gate with three inputs\n"
+                  "                                       | h : NOR gate with two inputs\n"
+                  "                                       | i : NOR gate with three inputs\n"
+                  "                                       | j : XOR gate with two inputs\n"
+                  "                                       | k : XOR gate with three inputs\n"
+                  "                                       | l : XNOR gate with two inputs\n"
+                  "                                       | m : XNOR gate with three inputs\n"
                   "-----------------------------------------------------------\n"
                   "Enter any one of them to analyse Adders and Substractors | A : Half adder\n"
                   "                                                         | B : Full adder\n"
@@ -51,21 +53,27 @@ int main(){
         if (ch == 'a'){
             getDataFromFile1 (&data1);
             and_two_input (&data1);
-            printf("The result of AND gate with two inputs is %d\n",data._res1);
+            printf("The result of AND gate with two inputs is %d\n",data1._res1);
         }
         else if (ch == 'b'){
             getDataFromFile2 (&data2);
             and_three_input (&data2);
-            printf("The result of AND gate with three inputs is %d\n",data._res2);
+            printf("The result of AND gate with three inputs is %d\n",data2._res2);
         }/** add functions in your respective else-if conditions and printf statements in your respective .c files*/
         else if (ch == 'c'){
-
+            getDataFromFile3 (&data3);
+            or_two_input (&data3);
+            printf("The result of OR gate with three inputs is %d\n",data3._res3);
         }
         else if (ch == 'd'){
-
+            getDataFromFile4 (&data4);
+            or_three_input (&data4);
+            printf("The result of OR gate with three inputs is %d\n",data4._res4);
         }
         else if (ch == 'e'){
-
+            getDataFromFile5 (&data5);
+            not_two_input (&data5);
+            printf("The result of NOT gate is %d\n",data5._res5);
         }
         else if (ch == 'f'){
 
@@ -89,9 +97,6 @@ int main(){
 
         }
         else if (ch == 'm'){
-
-        }
-        else if (ch == 'n'){
 
         }
         else if (ch == 'A'){
