@@ -36,7 +36,7 @@ All digital systems constructed by only three basic logic gates. These basic gat
 
 1.Digital flip-flops are memory devices used for storing binary data in sequential logic circuits. Latches are level sensitive and Flip-flops are edge sensitive. It means that the latch’s output change with a change in input levels and the flip-flop’s output only change when there is an edge of controlling signal.
 
-|Types of Flip-flops|Latches|
+|Flip-flops|Latches|
 |:--:|:--:|
 JK Flip-Flop  | JK Latch
 SR (Set-Reset) Flip-Flop | SR Latch
