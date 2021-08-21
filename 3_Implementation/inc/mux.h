@@ -28,5 +28,5 @@ typedef enum error_t{
 
 error_t getDataFromFile1 (mux_2x1 *_values);
 error_t MUX_2x1 (mux_2x1 *_value);
-
+error_t MUX_4X1 (mux_2X1 *_value);
 #endif
