@@ -1,6 +1,6 @@
  #include "adder.h"
 
-error_t getDataFromHalfAdderFile (hf_adder *param)
+error_ht getDataFromHalfAdderFile (hf_adder *param)
 {
     FILE *fp = NULL;
     fp = fopen ("adder.txt" , "r");
@@ -30,7 +30,7 @@ error_t getDataFromHalfAdderFile (hf_adder *param)
     return 0;
 }
 
-error_t getDataFromFullAdderFile (fl_adder *param)
+error_ht getDataFromFullAdderFile (fl_adder *param)
 {
     FILE *fp = NULL;
     fp = fopen ("adder.txt" , "r");
@@ -63,7 +63,7 @@ error_t getDataFromFullAdderFile (fl_adder *param)
     return 0;
 }
 
-error_t halfadder(hf_adder *param)
+error_ht halfadder(hf_adder *param)
 {
     param->sum = param->A ^ param->B;
     param->carry = param->A & param->B;
@@ -80,7 +80,7 @@ error_t halfadder(hf_adder *param)
   return 0;
 }
 
-error_t fulladder(fl_adder *param)
+error_ht fulladder(fl_adder *param)
 {
     param->sum = param->A ^ param->B ^ param->C;
     param->carry = (param->A & param->B)|(param->B & param->C)|(param->C & param->A);

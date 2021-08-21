@@ -19,14 +19,15 @@ typedef struct fulladder{
     int carry;
 }fl_adder;
 
-typedef enum error_t{
+typedef enum error_ht{
     PASS = 0,
     FAIL = -1,
-}error_t;
+}error_ht;
 
-error_t getDataFromHalfAdderFile (hf_adder *param);
-error_t getDataFromFullAdderFile (fl_adder *param);
-error_t halfadder (hf_adder *param);
-error_t fulladder (fl_adder *param); 
+
+error_ht getDataFromHalfAdderFile (hf_adder *param);
+error_ht getDataFromFullAdderFile (fl_adder *param);
+error_ht halfadder (hf_adder *param);
+error_ht fulladder (fl_adder *param); 
 
 #endif
