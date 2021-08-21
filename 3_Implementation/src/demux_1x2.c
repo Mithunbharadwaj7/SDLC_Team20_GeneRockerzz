@@ -11,7 +11,7 @@ error_t getDataFromFile3 (demux_1x2 *_values){
     }
     else
     {
-    for (int i=0; i<2; i++){
+    for (int i=0; i<3; i++){
         char str[100];
         fgets (str, 60, fp);
         switch (i)
@@ -22,12 +22,15 @@ error_t getDataFromFile3 (demux_1x2 *_values){
             case 1:
                 _values->_s1 = atoi(str);
                 break;
+            case 2:
+                 _values->_din = atoi(str);
+                 break;
     }
     fclose(fp);
     }
     return 0;
  }
-error_t DEMUX_1x8 (demux_1x2 *_values){
+error_t DEMUX_1x2 (demux_1x2 *_values){
     if(_values->_en){
         _values->_res1 = ~(_values->_s1) * _values->_din;
         _values->_res2 = (_values->_s1) *  _values->_din;
