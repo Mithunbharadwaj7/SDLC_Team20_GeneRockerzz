@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "mux.h"
 
-error_t getDataFromFile1 (mux_4x1 *_values)
+error_t getDataFromFile2 (mux_4x1 *_values)
 {
     
     FILE *fp = NULL;
-    fp = fopen ("mux_4X1.txt" , "r");
+    fp = fopen ("mux.txt" , "r");
         
         if (fp == NULL)
             {
@@ -59,15 +59,15 @@ error_t MUX_4x1 (mux_4x1 *_values)
                 {
                     _values->_res_4x1 = _values->_d0;
                 }
-            if(_values->_s0==0 & _values->_s2==1) 
+            if(_values->_s1==0 & _values->_s2==1) 
                 {
                     _values->_res_4x1 = _values->_d1;
                 }
-            if(_values->_s0==1 & _values->_s2==0) 
+            if(_values->_s1==1 & _values->_s2==0) 
                 {
                     _values->_res_4x1 = _values->_d2;
                 }
-            if(_values->_s0==1 & _values->_s2==1) 
+            if(_values->_s1==1 & _values->_s2==1) 
                 {
                     _values->_res_4x1 = _values->_d3;
                 }
@@ -75,7 +75,7 @@ error_t MUX_4x1 (mux_4x1 *_values)
 
     else if (~(_values->_en))
         {
-            _values->_res_4X1 = 0;
+            _values->_res_4x1 = 0;
         }
 
     else if (_values == NULL)
