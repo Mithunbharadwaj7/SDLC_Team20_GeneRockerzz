@@ -4,6 +4,7 @@
 #include "Subtractor.h"
 #include "mux.h"
 #include "demux.h"
+#include "conversion.h"
 
 int main(){
     and_two data1;
@@ -32,6 +33,13 @@ int main(){
     demux_1x2  data_1x2_DEMUX;
     demux_1x4  data_1x4_DEMUX;
     demux_1x8  data_1x8_DEMUX;
+
+    enco_21 data_2x1_ENCODER;
+    enco_42 data_4X2_ENCODER;
+    enco_83 data_8X3_ENCODER;
+    deco_12 data_1X2_DECODER;
+    deco_24 data_2X4_DECODER;
+    deco_38 data_3X8_DECODER;
     
     char ch = 'C';
     printf ("\nEnter C to compute combinational circuit parameters\n"
@@ -187,22 +195,28 @@ int main(){
             DEMUX_1x8(&data_1x8_DEMUX);
         }
         else if (ch == 'o'){
-
+            getData_5(&data_2x1_ENCODER);
+            encoder_21(&data_2x1_ENCODER);
         }
         else if (ch == 'p'){
-
+            getData_6(&data_4X2_ENCODER);
+            encoder_42(&data_4X2_ENCODER);
         }
         else if (ch == 'q'){
-
+            getData_7(&data_8X3_ENCODER);
+            encoder_83(&data_8X3_ENCODER);
         }
         else if (ch == 'r'){
-
+            getData_2(&data_1X2_DECODER);
+            decoder_12(&data_1X2_DECODER);
         }
         else if (ch == 's'){
-
+            getData_3(&data_2X4_DECODER);
+            decoder_24(&data_2X4_DECODER);
         }
         else {
-
+            getData_4(&data_3X8_DECODER);
+            decoder_38(&data_3X8_DECODER);
         }
     }
 }
