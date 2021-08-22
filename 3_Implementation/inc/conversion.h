@@ -63,22 +63,22 @@ typedef struct deco_38{
     int Y7;
 }deco_38;
 
-typedef enum error_t{
+typedef enum error_edt{
     PASS = 0,
     FAIL = -1,
     ERR_NEGATIVE = -2
-}error_t;
+}error_edt;
 
-error_t getData_2 (deco_12 *values);
-error_t getData_3 (deco_24 *values);
-error_t getData_4 (deco_38 *values);
-void decoder_12(deco_12 *values);
-void decoder_24(deco_24 *values);
-void decoder_38(deco_38 *values);
-error_t getData_5 (enco_21 *values);
-error_t getData_6 (enco_42 *values);
-error_t getData_7 (enco_83 *values);
-void encoder_21(enco_21 *values);
-void encoder_42(enco_42 *values);
-void encoder_83(enco_83 *values);
+error_edt getData_2 (deco_12 *values);
+error_edt getData_3 (deco_24 *values);
+error_edt getData_4 (deco_38 *values);
+error_edt decoder_12(deco_12 *values);
+error_edt decoder_24(deco_24 *values);
+error_edt decoder_38(deco_38 *values);
+error_edt getData_5 (enco_21 *values);
+error_edt getData_6 (enco_42 *values);
+error_edt getData_7 (enco_83 *values);
+error_edt encoder_21(enco_21 *values);
+error_edt encoder_42(enco_42 *values);
+error_edt encoder_83(enco_83 *values);
 #endif // CONVERSION_H_INCLUDED
