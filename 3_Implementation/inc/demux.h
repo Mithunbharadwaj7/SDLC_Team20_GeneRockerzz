@@ -39,17 +39,17 @@ typedef struct demux_1x8{
     int _res8;
 }demux_1x8;
 
-typedef enum error_t{
-    PASS = 0,
-    FAIL = -1,
-    ERR_NEGATIVE = -2
-}error_t;
+typedef enum error_demux{
+    PASS_demux = 0,
+    FAIL_demux = -1,
+    ERR_NEGATIVE_demux = -2
+}error_demux;
 
-error_t getDataFromFile1x2 (demux_1x2 *_values);
-error_t getDataFromFile1x4 (demux_1x4 *_values);
-error_t getDataFromFile1x8 (demux_1x8 *_values);
-error_t DEMUX_1x2 (demux_1x2 *_value);
-error_t DEMUX_1x4 (demux_1x4 *_value);
-error_t DEMUX_1x8 (demux_1x8 *_value);
+error_demux getDataFromFile1x2 (demux_1x2 *_values);
+error_demux getDataFromFile1x4 (demux_1x4 *_values);
+error_demux getDataFromFile1x8 (demux_1x8 *_values);
+error_demux DEMUX_1x2 (demux_1x2 *_value);
+error_demux DEMUX_1x4 (demux_1x4 *_value);
+error_demux DEMUX_1x8 (demux_1x8 *_value);
 
 #endif
