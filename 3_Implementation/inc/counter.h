@@ -26,8 +26,7 @@ typedef struct count{
 
 typedef enum error_sct{
     PASS_CT = 0,
-    FAIL_CT = -1,
-    ERR_NEGATIVE_CT = -2
+    FAIL_CT = -1
 }error_sct;
 
 error_sct getDataFromCounter(count *values);
