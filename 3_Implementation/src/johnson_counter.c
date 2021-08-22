@@ -57,5 +57,11 @@ void johnson_counter(count *values){
         printf("\n");
     }
     free(ptr);
+    if (values == NULL){
+        return FAIL_CT;
+    }
+    else{
+        return PASS_CT;
+    }
     return 0;
 }

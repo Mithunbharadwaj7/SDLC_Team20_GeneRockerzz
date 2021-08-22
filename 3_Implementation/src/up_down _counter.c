@@ -36,4 +36,10 @@ void up_down_counter (count *values){
     {
         printf("%ld\n",DTB(i));
     }
+    if (values == NULL){
+        return FAIL_CT;
+    }
+    else{
+        return PASS_CT;
+    }
 }
