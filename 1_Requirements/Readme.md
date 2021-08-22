@@ -116,16 +116,57 @@ This gives a basic building block for developing major digital circuits.
 
 ### How:
 we take the input for every circuit, apply logical calculations for it and give the required output.
+
 # High level requirements
 
 |ID|Description|Status|
 |--|--|--|
-|HL1|Truth table of gates|Implemented|
-|HL2|Binary calculations|Implemented|
+|HL1|Working of Logic gates|Implemented|
+|HL2|Working of adders and subtractors|Implemented|
 |HL3|Multiplexer and demultiplexer working|Implemented|
 |HL4|Encoder and decoder working|Implemented|
 |HL5|Latches and flip flop working|Implemented|
-|HL6|Working of adders and subtractors|Implemented|
-|HL7|Counters concept|Implemented| 
+|HL6|Counters concept|Implemented|
 
+
+# Low level requirements
+
+|ID|Description|HLR|Status|
+|--|--|--|--|
+|LL1|And Gate|HL1|Implemented|
+|LL2|OR Gate|HL1|Implemented|
+|LL3|Not Gate|HL1|Implemented|
+|LL4|NAND Gate|HL1|Implemented|
+|LL5|NOR Gate|HL1|Implemented|
+|LL6|XOR Gate|HL1|Implemented|
+|LL7|XNor Gate|HL1|Implemented|
+|LL1|Half Adder|HL2|Implemented|
+|LL2|Half Subtractor|HL2|Implemented|
+|LL3|Full Adder|HL2|Implemented|
+|LL4|Full Subtractor|HL2|Implemented|
+|LL1|2:1 MUX|HL3|Implemented|
+|LL2|4:1 MUX|HL3|Implemented|
+|LL3|8:1 MUX|HL3|Implemented|
+|LL4|1:2 DE-MUX|HL3|Implemented|
+|LL5|1:4 DE-MUX|HL3|Implemented|
+|LL6|1:8 DE-MUX|HL3|Implemented|
+|LL1|2*1 Encoder|HL4|Implemented|
+|LL2|4*2 Encoder|HL4|Implemented|
+|LL3|8*3 Encoder|HL4|Implemented|
+|LL4|1*2 Decoder|HL4|Implemented|
+|LL5|2*4 Decoder|HL4|Implemented|
+|LL6|3*8 Decoder|HL4|Implemented|
+|LL1|SR Latch|HL5|Implemented|
+|LL2|D Latch|HL5|Implemented|
+|LL3|JK Latch|HL5|Implemented|
+|LL4|T Latch|HL5|Implemented|
+|LL5|D FlipFlop|HL5|Implemented|
+|LL6|T FlipFlop|HL5|Implemented|
+|LL7|SR FlipFlop|HL5|Implemented|
+|LL8|JK FlipFlop|HL5|Implemented|
+|LL1|Up Counter|HL6|Implemented|
+|LL2|Down Counter|HL6|Implemented|
+|LL3|UpDown Counter|HL6|Implemented|
+|LL4|Ring Counter|HL6|Implemented|
+|LL5|Jhonson Counter|HL6|Implemented|
 
