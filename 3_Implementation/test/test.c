@@ -65,12 +65,6 @@ void test_half_Subtractor(void){
     values.Difference;
     values.Borrow;
     TEST_ASSERT_EQUAL_INT(PASS_sub, half_Subtractor(&values));
-    // for negative values
-    values.a  = -1;
-    values.b  = 1;
-    values.Difference;
-    values.Borrow;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_sub, half_Subtractor(&values));
 }
 
 void test_full_Subtractor(void){
@@ -82,13 +76,6 @@ void test_full_Subtractor(void){
     values.Difference_1 ;
     values.Borrow_1;
     TEST_ASSERT_EQUAL_INT(PASS_sub, full_Subtractor(&values));
-    // for negative values
-    values.a1  = 1;
-    values.b1  = 1;
-    values.c1  = 1;
-    values.Difference_1 ;
-    values.Borrow_1;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_sub, full_Subtractor(&values));
 }
 
 void test_MUX_2x1(void){
