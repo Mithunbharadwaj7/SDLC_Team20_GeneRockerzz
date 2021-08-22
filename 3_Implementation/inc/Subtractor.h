@@ -20,8 +20,8 @@ typedef struct full_subtractor{
 }full_subtractor;
 
 typedef enum error_sub{
-    PASS1 = 0,
-    FAIL1 = -1,
+    PASS_sub = 0,
+    FAIL_sub = -1,
 }error_sub;
 
 error_sub getData_2 (half_subtractor *values);

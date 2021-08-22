@@ -66,11 +66,11 @@ error_sub half_Subtractor (half_subtractor *values){
     printf("Difference is %d and Borrow is %d",values->Difference,values->Borrow);
     if (values == NULL)
     {
-        return FAIL;
+        return FAIL_sub;
     }
     else
     {
-        return PASS;
+        return PASS_sub;
     }
   return 0;
 }
@@ -81,12 +81,11 @@ error_sub full_Subtractor (full_subtractor *values){
     printf("Difference is %d and Borrow is %d",values->Difference_1,values->Borrow_1);
     if (values == NULL)
     {
-        return FAIL;
+        return FAIL_sub;
     }
     else
     {
-        return PASS;
+        return PASS_sub;
     }
   return 0;
-    return 0;
 }

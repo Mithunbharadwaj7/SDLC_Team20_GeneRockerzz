@@ -1,4 +1,4 @@
-#include "latches.h"
+#include "latch.h"
 
 error_lat getDataFromSR_lat(SR_lat *latches)
 {

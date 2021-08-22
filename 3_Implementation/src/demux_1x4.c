@@ -49,7 +49,7 @@ error_demux DEMUX_1x4 (demux_1x4 *_values)
                 _values->_res2 = ~(_values->_s1) *  (_values->_s2) * _values->_din;
                 _values->_res3 =  (_values->_s1) * ~(_values->_s2) * _values->_din;
                 _values->_res4 =  (_values->_s1) *  (_values->_s2) * _values->_din;
-                printf("%d %d %d %d ",_values->_res1,_values->_res2,_values->_res3,_values->_res4)
+                printf("%d %d %d %d ",_values->_res1,_values->_res2,_values->_res3,_values->_res4);
             }
 
         else if(~(_values->_en))

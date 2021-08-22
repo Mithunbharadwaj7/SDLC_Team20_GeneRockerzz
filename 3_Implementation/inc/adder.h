@@ -20,8 +20,8 @@ typedef struct fulladder{
 }fl_adder;
 
 typedef enum error_ht{
-    PASS1 = 0,
-    FAIL1 = -1,
+    PASS = 0,
+    FAIL = -1,
 }error_ht;
 
 error_ht getDataFromHalfAdderFile (hf_adder *param);
