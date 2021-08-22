@@ -111,12 +111,24 @@ error_edt getData_7 (enco_83 *values){
 error_edt encoder_21 (enco_21 *values){
     values->Y0 = (!(values->X0))|(values->X1);
     printf("Y0 = %d",values->Y0);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
 
 error_edt encoder_42 (enco_42 *values){
     values->Y0 = (values->X3) | (values->X1) ;
     values->Y1 = (values->X3) | (values->X2) ;
     printf("Y0 = %d Y1 = %d ",values->Y0,values->Y1);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
 
 error_edt encoder_83 (enco_83 *values){
@@ -124,4 +136,10 @@ error_edt encoder_83 (enco_83 *values){
     values->Y1 = (values->X2) & (values->X3) | (values->X6) | (values->X7);
     values->Y2 = (values->X4) & (values->X5) | (values->X6) | (values->X7);
     printf("Y0 = %d Y1 = %d Y2 = %d",values->Y0,values->Y1,values->Y2);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
