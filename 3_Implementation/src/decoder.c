@@ -1,5 +1,4 @@
 #include "conversion.h"
-#include<stdio.h>
 
 error_edt getData_2 (deco_12 *values){
     FILE *fp = NULL;
