@@ -25,10 +25,11 @@
 | LL_8 |Checking whether Half Adder provides required output |By giving all the four input combinations in A and B|Success  | Success | Requirement |
 | LL_9 |Checking whether Half Subtractor provides the required output |By giving all the four input combinations in A and B|Success  | Success | Requirement |
 | LL_10 |Checking whether Full Adder provides the required output |By giving all the eight input combinations in A,B and C|Success  | Success | Requirement|
-| LL_11 |Checking whether One bit comparator provides the required output |Single bit two inputs A,B|Success  | Success |Requirement|
-| LL_12 |Checking whether Two bit comparator provides the required output |Two binary inputs each of two bits A0,A1,B0,B1|Success  | Success |Requirement|
-| LL_13 |Checking whether Multiplexer provides the required output |By using all combinations 2:1,4:1,8:1|Success  | Success |Requirement|
-| LL_14 |Checking whether Demultiplexer provides the required output |By using all combinations 1:2,1:4,1:8|Success  | Success |Requirement|
-| LL_15 |Checking whether Encoder provides the required output |By using all combinations 2x1, 4x2, 8x3|Success  | Success |Requirement|
-| LL_16 |Checking whether Decoder provides the required output |By using all combinations 1x2, 2x4, 3x8|Success  | Success |Requirement|
-
+| LL_11 |Checking whether Full Subtractor provides the required output |By giving all the eight input combinations in A,B and C|Success  | Success | Requirement|
+| LL_12 |Checking whether Multiplexer provides the required output |By using all combinations 2:1,4:1,8:1|Success  | Success |Requirement|
+| LL_13 |Checking whether Demultiplexer provides the required output |By using all combinations 1:2,1:4,1:8|Success  | Success |Requirement|
+| LL_14 |Checking whether Encoder provides the required output |By using all combinations 2x1, 4x2, 8x3|Success  | Success |Requirement|
+| LL_15 |Checking whether Decoder provides the required output |By using all combinations 1x2, 2x4, 3x8|Success  | Success |Requirement|
+| LL_16 |Checking whether Latches provides the required output |By using types D,T,SR,JK|Success  | Success |Requirement|
+| LL_17 |Checking whether FlipFlops provides the required output |By using types D,T,SR,JK|Success  | Success |Requirement|
+| LL_18 |Checking whether Counters provides the required output |By using types Up,Down,UpDown,Ring and Jhonson|Success  | Success |Requirement|
