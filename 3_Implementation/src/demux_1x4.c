@@ -33,8 +33,10 @@ error_demux getDataFromFile1x4 (demux_1x4 *_values)
                                     break;
                             }
                     }
+            fclose(fp);
+            
             }
-        fclose(fp);
+        
 
     return 0;
 }
