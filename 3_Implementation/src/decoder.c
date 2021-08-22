@@ -1,13 +1,13 @@
 #include "conversion.h"
 #include<stdio.h>
 
-error_de getData_2 (deco_12 *values){
+error_edt getData_2 (deco_12 *values){
     FILE *fp = NULL;
     fp = fopen ("decoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_de;
+       return FAIL_EDT;
     }
     else
     {
@@ -26,13 +26,13 @@ error_de getData_2 (deco_12 *values){
     return 0;
 }
 
-error_de getData_3 (deco_24 *values){
+error_edt getData_3 (deco_24 *values){
     FILE *fp = NULL;
     fp = fopen ("decoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_de;
+       return FAIL_EDT;
     }
     else
     {
@@ -54,13 +54,13 @@ error_de getData_3 (deco_24 *values){
     return 0;
 }
 
-error_de getData_4 (deco_38 *values){
+error_edt getData_4 (deco_38 *values){
     FILE *fp = NULL;
     fp = fopen ("decoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_de;
+       return FAIL_EDT;
     }
     else
     {
@@ -85,13 +85,13 @@ error_de getData_4 (deco_38 *values){
     return 0;
 }
 
-void decoder_12 (deco_12 *values){
+error_edt decoder_12 (deco_12 *values){
     values->Y0 = !(values->A);
     values->Y1 = values->A;
     printf("Y0 = %d Y1 = %d ",values->Y0,values->Y1);
 }
 
-void decoder_24 (deco_24 *values){
+error_edt decoder_24 (deco_24 *values){
     values->Y0 = !(values->A) & (!(values->B)) ;
     values->Y1 = !(values->A) & (values->B) ;
     values->Y2 = (values->A) & (!(values->B)) ;
@@ -99,7 +99,7 @@ void decoder_24 (deco_24 *values){
     printf("Y0 = %d Y1 = %d Y2 = %d Y3 = %d ",values->Y0,values->Y1,values->Y2,values->Y3);
 }
 
-void decoder_38 (deco_38 *values){
+error_edt decoder_38 (deco_38 *values){
     values->Y0 = !(values->A) & (!(values->B)) & (!(values->C));
     values->Y1 = !(values->A) & (!(values->B)) & (values->C);
     values->Y2 = !(values->A) & (values->B) & (!(values->C));
