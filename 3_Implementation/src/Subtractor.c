@@ -60,14 +60,33 @@ error_sub getData_3 (full_subtractor *values){
     return 0;
 }
 
-void half_Subtractor (half_subtractor *values){
+error_sub half_Subtractor (half_subtractor *values){
     values->Difference = values->a ^ values->b;
     values->Borrow = (!(values->a)) & values->b;
     printf("Difference is %d and Borrow is %d",values->Difference,values->Borrow);
+    if (values == NULL)
+    {
+        return FAIL;
+    }
+    else
+    {
+        return PASS;
+    }
+  return 0;
 }
 
-void full_Subtractor (full_subtractor *values){
+error_sub full_Subtractor (full_subtractor *values){
     values->Difference_1 = (values->a1 ^ values->b1) ^ values->c1;
     values->Borrow_1 = (values->c1 & (!(values->a1 ^ values->b1))) | ((!(values->a1)) & values->b1);
     printf("Difference is %d and Borrow is %d",values->Difference_1,values->Borrow_1);
+    if (values == NULL)
+    {
+        return FAIL;
+    }
+    else
+    {
+        return PASS;
+    }
+  return 0;
+    return 0;
 }
