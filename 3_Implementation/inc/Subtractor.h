@@ -19,14 +19,14 @@ typedef struct full_subtractor{
     int Borrow_1;
 }full_subtractor;
 
-typedef enum error_t{
-    PASS = 0,
-    FAIL = -1,
-    ERR_NEGATIVE = -2
-}error_t;
+typedef enum error_sub{
+    PASS_sub = 0,
+    FAIL_sub = -1,
+    ERR_NEGATIVE_sub = -2
+}error_sub;
 
-error_t getData_2 (half_subtractor *values);
-error_t getData_3 (full_subtractor *values);
+error_sub getData_2 (half_subtractor *values);
+error_sub getData_3 (full_subtractor *values);
 void half_Subtractor(half_subtractor *values);
 void full_Subtractor(full_subtractor *values);
 
