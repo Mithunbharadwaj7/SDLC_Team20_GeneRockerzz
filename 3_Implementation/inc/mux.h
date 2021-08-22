@@ -48,8 +48,8 @@ typedef enum error_mux{
 error_mux getDataFromFile2x1 (mux_2x1 *_values);
 error_mux getDataFromFile4x1 (mux_4x1 *_values);
 error_mux getDataFromFile8x1 (mux_8x1 *_values);
-error_mux MUX_2x1 (mux_2x1 *_value);
-error_mux MUX_4X1 (mux_4x1 *_value);
-error_mux MUX_8X1 (mux_8x1 *_value);
+error_mux MUX_2x1 (mux_2x1 *_values);
+error_mux MUX_4X1 (mux_4x1 *_values);
+error_mux MUX_8X1 (mux_8x1 *_values);
 
 #endif
