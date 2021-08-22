@@ -13,7 +13,7 @@ void test_and_two_input(void){
     _values._a = 1;
     _values._b = 1;
     _values._res1;
-    TEST_ASSERT_EQUAL_INT(PASS, and_two_input(&_values));
+    TEST_ASSERT_EQUAL_INT(PASS_1, and_two_input(&_values));
     // for negative values
     _values._a = -1;
     _values._b = 1;
@@ -28,7 +28,7 @@ void test_and_three_input(void){
     _values._b1 = 1;
     _values._c1 = 1;
     _values._res2;
-    TEST_ASSERT_EQUAL_INT(PASS, and_three_input(&_values));
+    TEST_ASSERT_EQUAL_INT(PASS_1, and_three_input(&_values));
     // for negative values
     _values._a1 = -1;
     _values._b1 = 1;

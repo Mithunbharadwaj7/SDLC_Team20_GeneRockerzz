@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include "mux.h"
 
-error_t getDataFromFile3(mux_8x1 *_values){
+error_mux getDataFromFile3(mux_8x1 *_values){
     FILE *fp = NULL;
     fp = fopen ("mux.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!"); 
-       return FAIL;
+       return FAIL_mux;
     }
     else
     {
@@ -58,42 +58,50 @@ error_t getDataFromFile3(mux_8x1 *_values){
     }
     return 0;
 }
-error_t MUX_8x1 (mux_8x1 *_values){
+error_mux MUX_8x1 (mux_8x1 *_values){
     if(_values->_en==1){
         if(_values->_s1==0 && _values->_s2==0 && _values->_s3==0) {
             _values->_res_8x1 = _values->_d0;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==0 && _values->_s2==0 && _values->_s3==1) {
             _values->_res_8x1 = _values->_d1;
+            printf("%d ",_values->_res_8x1);
         }
           if(_values->_s1==0 && _values->_s2==1 && _values->_s3==0) {
             _values->_res_8x1 = _values->_d2;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==0 && _values->_s2==1 && _values->_s3==1) {
             _values->_res_8x1 = _values->_d3;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==1 && _values->_s2==0 && _values->_s3==0) {
             _values->_res_8x1 = _values->_d4;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==1 && _values->_s2==0 && _values->_s3==1) {
             _values->_res_8x1 = _values->_d5;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==1 && _values->_s2==1 && _values->_s3==0) {
             _values->_res_8x1 = _values->_d6;
+            printf("%d ",_values->_res_8x1);
         }
         if(_values->_s1==1 && _values->_s2==1 && _values->_s3==1) {
             _values->_res_8x1 = _values->_d7;
+            printf("%d ",_values->_res_8x1);
         }
      
     }
     if (_values == NULL){
-        return FAIL;
+        return FAIL_mux;
     }
     else if (_values->_res_8x1 < 0){
-        return ERR_NEGATIVE;
+        return ERR_NEGATIVE_mux;
     }
     else{
-        return PASS;
+        return PASS_mux;
     }
    // return 0;
 }
