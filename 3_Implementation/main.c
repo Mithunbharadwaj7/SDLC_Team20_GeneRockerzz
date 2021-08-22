@@ -239,7 +239,7 @@ int main(){
             decoder_38(&data_3X8_DECODER);
         }
         else{
-            printf("Enter valid choice.\n")
+            printf("Enter valid choice.\n");
         }
     }
     else if(ch =='S' || ch == 's')
