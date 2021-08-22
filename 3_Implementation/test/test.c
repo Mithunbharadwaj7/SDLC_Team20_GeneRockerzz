@@ -3,6 +3,8 @@
 #include "adder.h"
 #include "Subtractor.h"
 #include "mux.h"
+#include "demux.h"
+#include "conversion.h"
 
 void setUp(void){}
 
@@ -197,7 +199,7 @@ void test_DEMUX_1x4(void){
 }
 
 void test_DEMUX_1x8(void){
-    demux_1x4 _values;
+    demux_1x8 _values;
     // for positive values
     _values._en;
     _values._s1 = 1;
@@ -237,11 +239,7 @@ void test_encoder_21(void){
     values.X1 = 1;
     values.Y0;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, encoder_21(&values));
-    // for negative values
-    values.X0 = -1;
-    values.X1 = -1;
-    values.Y0;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, encoder_21(&values));
+    
 }
 
 void test_encoder_42(void){
@@ -254,14 +252,7 @@ void test_encoder_42(void){
     values.Y0;
     values.Y1;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, encoder_42(&values));
-    // for negative values
-    values.X0 = -1;
-    values.X1 = -1;
-    values.X2 = -1;
-    values.X3 = -1;
-    values.Y0;
-    values.Y1;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, encoder_42(&values));
+    
 }
 
 void test_encoder_83(void){
@@ -279,19 +270,6 @@ void test_encoder_83(void){
     values.Y1;
     values.Y2;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, encoder_83(&values));
-    // for negative values
-    values.X0 = -1;
-    values.X1 = -1;
-    values.X2 = -1;
-    values.X3 = -1;
-    values.X4 = -1;
-    values.X5 = -1;
-    values.X6 = -1;
-    values.X7 = -1;
-    values.Y0;
-    values.Y1;
-    values.Y2;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, encoder_83(&values));
 }
 
 void test_decoder_12(void){
@@ -301,11 +279,6 @@ void test_decoder_12(void){
     values.Y0;
     values.Y1;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, decoder_12(&values));
-    // for negative values
-    values.A = -1;
-    values.Y0;
-    values.Y1;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, decoder_12(&values));
 }
 
 void test_decoder_24(void){
@@ -319,13 +292,6 @@ void test_decoder_24(void){
     values.Y3;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, decoder_24(&values));
     // for negative values
-    values.A = -1;
-    values.B = -1;
-    values.Y0;
-    values.Y1;
-    values.Y2;
-    values.Y3;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, decoder_24(&values));
 }
 
 void test_decoder_38(void){
@@ -343,19 +309,7 @@ void test_decoder_38(void){
     values.Y6;
     values.Y7;
     TEST_ASSERT_EQUAL_INT(PASS_EDT, decoder_38(&values));
-    // fro negative values
-    values.A = -1;
-    values.B = -1;
-    values.C = -1;
-    values.Y0;
-    values.Y1;
-    values.Y2;
-    values.Y3;
-    values.Y4;
-    values.Y5;
-    values.Y6;
-    values.Y7;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_EDT, decoder_38(&values));
+    
 }
 
 int main(){
