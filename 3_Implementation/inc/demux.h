@@ -48,8 +48,8 @@ typedef enum error_demux{
 error_demux getDataFromFile1x2 (demux_1x2 *_values);
 error_demux getDataFromFile1x4 (demux_1x4 *_values);
 error_demux getDataFromFile1x8 (demux_1x8 *_values);
-error_demux DEMUX_1x2 (demux_1x2 *_value);
-error_demux DEMUX_1x4 (demux_1x4 *_value);
-error_demux DEMUX_1x8 (demux_1x8 *_value);
+error_demux DEMUX_1x2 (demux_1x2 *_values);
+error_demux DEMUX_1x4 (demux_1x4 *_values);
+error_demux DEMUX_1x8 (demux_1x8 *_values);
 
 #endif
