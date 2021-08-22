@@ -59,7 +59,11 @@ int main(){
     D_ff data_D_FF;
     T_ff data_T_FF;
 
-    count data_counter;
+    up_count data_upcounter;
+    down_count data_downcounter;
+    up_down_count data_updowncounter;
+    johnson_count data_johnsoncounter;
+    ring_count data_ringcounter;
     
     char ch = 'C';
     printf ("\nEnter C or cto compute combinational circuit parameters\n"
@@ -215,27 +219,27 @@ int main(){
             DEMUX_1x8(&data_1x8_DEMUX);
         }
         else if (ch == 'o'){
-            getData_5(&data_2x1_ENCODER);
+            getData_21(&data_2x1_ENCODER);
             encoder_21(&data_2x1_ENCODER);
         }
         else if (ch == 'p'){
-            getData_6(&data_4X2_ENCODER);
+            getData_42(&data_4X2_ENCODER);
             encoder_42(&data_4X2_ENCODER);
         }
         else if (ch == 'q'){
-            getData_7(&data_8X3_ENCODER);
+            getData_83(&data_8X3_ENCODER);
             encoder_83(&data_8X3_ENCODER);
         }
         else if (ch == 'r'){
-            getData_2(&data_1X2_DECODER);
+            getData_12(&data_1X2_DECODER);
             decoder_12(&data_1X2_DECODER);
         }
         else if (ch == 's'){
-            getData_3(&data_2X4_DECODER);
+            getData_24(&data_2X4_DECODER);
             decoder_24(&data_2X4_DECODER);
         }
         else if (ch== 't'){
-            getData_4(&data_3X8_DECODER);
+            getData_38(&data_3X8_DECODER);
             decoder_38(&data_3X8_DECODER);
         }
         else{
@@ -296,24 +300,24 @@ int main(){
             T_FF (&data_T_FF);
         }
         else if (ch == 'o'){
-            getDataFromCounter(&data_counter);
-            up_counter(&data_counter);
+            getDataFromUpCounter(&data_upcounter);
+            up_counter(&data_upcounter);
         }
         else if (ch == 'p'){
-            getDataFromCounter(&data_counter);
-            down_counter(&data_counter);
+            getDataFromDownCounter(&data_downcounter);
+            down_counter(&data_downcounter);
         }
         else if (ch == 'q'){
-            getDataFromCounter(&data_counter);
-            up_down_counter(&data_counter);
+            getDataFromUpDownCounter(&data_updowncounter);
+            up_down_counter(&data_updowncounter);
         }
         else if (ch == 'r'){
-            getDataFromCounter(&data_counter);
-            johnson_counter(&data_counter);
+            getDataFromJohnsonCounter(&data_johnsoncounter);
+            johnson_counter(&data_johnsoncounter);
         }
         else if (ch == 's'){
-            getDataFromCounter(&data_counter);
-            ring_counter(&data_counter);
+            getDataFromRingCounter(&data_ringcounter);
+            ring_counter(&data_ringcounter);
         }
         else{
             printf("Enter the valid choice.\n");
