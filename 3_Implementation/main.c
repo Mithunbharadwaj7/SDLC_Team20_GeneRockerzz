@@ -5,6 +5,14 @@
 #include "mux.h"
 #include "demux.h"
 #include "conversion.h"
+#include "latch.h"
+#include "jk.h"
+#include "flipflop.h"
+#include "counter.h"
+#include "latch.h"
+#include "jk.h"
+#include "flipflop.h"
+#include "counter.h"
 
 int main(){
     and_two data1;
@@ -40,6 +48,18 @@ int main(){
     deco_12 data_1X2_DECODER;
     deco_24 data_2X4_DECODER;
     deco_38 data_3X8_DECODER;
+    
+    SR_lat data_SR_LATCH;
+    JK_LA data_JK_LATCH;
+    D_lat data_D_LATCH;
+    T_LA data_T_LATCH;
+
+    SR_ff data_SR_FF;
+    JK_ff data_JK_FF;
+    D_ff data_D_FF;
+    T_ff data_T_FF;
+
+    count data_counter;
     
     char ch = 'C';
     printf ("\nEnter C to compute combinational circuit parameters\n"
@@ -214,9 +234,90 @@ int main(){
             getData_3(&data_2X4_DECODER);
             decoder_24(&data_2X4_DECODER);
         }
-        else {
+        else if (ch== 't'){
             getData_4(&data_3X8_DECODER);
             decoder_38(&data_3X8_DECODER);
         }
+        else{
+            printf("Enter valid choice.\n")
+        }
     }
+    else if(ch =='S' || ch == 's')
+    {
+        printf("\nThe following operations are provided\n"
+                  "-----------------------------------------------\n"
+                  "Enter any one of them to analyse Latches | a : SR Latch\n"
+                  "                                         | b : JK Latch\n"
+                  "                                         | c : D Latch\n"
+                  "                                         | c : T Latch\n"
+                  "-----------------------------------------------------------\n"
+                  "Enter any one of them to analyse Flip Flops | A : SR Flip-Flop\n"
+                  "                                            | B : JK Flip-Flop\n"
+                  "                                            | C : D Flip-Flop\n"
+                  "                                            | D : T Flip-Flop\n"
+                  "------------------------------------------------------------\n"
+                  "Enter any one of them to analyse Counters | o : UP counter \n"
+                  "                                          | p : DOWN counter\n"
+                  "                                          | q : UP-DOWN counter\n"
+                  "                                          | r : JOHNSON counter\n"
+                  "                                          | s : RING decoder\n");
+        scanf("%s",&ch);
+        if (ch == 'a'){
+            getDataFromSR_lat(&data_SR_LATCH);
+            SR_latch (&data_SR_LATCH);
+        }
+        else if (ch == 'b'){
+            getDataFromJK (&data_JK_LATCH);
+            JK (&data_JK_LATCH);
+        }
+        else if (ch == 'c'){
+            getDataFromD_lat (&data_D_LATCH);
+            SR_latch(&data_D_LATCH);
+        }
+        else if (ch == 'd'){
+            getDataFromT (&data_T_LATCH);
+            T (&data_T_LATCH);
+        }
+        else if (ch == 'A'){
+            getDataFromSR_ff (&data_SR_FF);
+            SR_FF (&data_SR_FF);
+        }
+        else if (ch =='B'){
+            getDataFromJK_ff (&data_JK_FF);
+            JK_FF (&data_JK_FF);
+        }
+        else if (ch == 'C'){
+            getDataFromD_ff (&data_D_FF);
+            D_FF (&data_D_FF);
+
+        }
+        else if (ch == 'D'){
+            getDataFromT_ff (&data_T_FF);
+            T_FF (&data_T_FF);
+        }
+        else if (ch == 'o'){
+            getDataFromCounter(&data_counter);
+            up_counter(&data_counter);
+        }
+        else if (ch == 'p'){
+            getDataFromCounter(&data_counter);
+            down_counter(&data_counter);
+        }
+        else if (ch == 'q'){
+            getDataFromCounter(&data_counter);
+            up_down_counter(&data_counter);
+        }
+        else if (ch == 'r'){
+            getDataFromCounter(&data_counter);
+            johnson_counter(&data_counter);
+        }
+        else if (ch == 's'){
+            getDataFromCounter(&data_counter);
+            ring_counter(&data_counter);
+        }
+        else{
+            printf("Enter the valid choice.\n");
+        }
+    }
+    return 0;
 }
