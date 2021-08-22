@@ -64,9 +64,9 @@ typedef struct deco_38{
 }deco_38;
 
 typedef enum error_edt{
-    PASS = 0,
-    FAIL = -1,
-    ERR_NEGATIVE = -2
+    PASS_EDT = 0,
+    FAIL_EDT= -1,
+    ERR_NEGATIVE_EDT = -2
 }error_edt;
 
 error_edt getData_2 (deco_12 *values);
