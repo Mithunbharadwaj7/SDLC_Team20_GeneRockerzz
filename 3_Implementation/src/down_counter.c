@@ -25,7 +25,7 @@ error_sct getDataFromCounter(count *values){
     return 0;
 }
 
-error_sct down_counter (count *values){
+void down_counter (count *values){
     for(int i=values->n;i>0;i--)
     {
         printf("%ld\n",DTB(i));
