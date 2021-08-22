@@ -93,7 +93,7 @@ void test_MUX_2x1(void){
     _values._d1 = 1;
     _values._s1 = 1;
     _values._res_2x1;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_mux, MUX_2x1(&_value));
+    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_mux, MUX_2x1(&_values));
 }
 
 void test_MUX_4x1(void){
