@@ -25,14 +25,13 @@ typedef struct count{
 
 
 typedef enum error_sct{
-    PASS_CT = 0,
-    FAIL_CT = -1
+    PASS_CT = 0
 }error_sct;
 
 error_sct getDataFromCounter(count *values);
-error_sct down_counter (count *values);
-error_sct up_counter (count *values);
-error_sct up_down_counter (count *values);
-error_sct johnson_counter (count *values);
-error_sct ring_counter (count *values);
+void down_counter (count *values);
+void up_counter (count *values);
+void up_down_counter (count *values);
+void johnson_counter (count *values);
+void ring_counter (count *values);
 #endif // COUNTER_H_INCLUDED
