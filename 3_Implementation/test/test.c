@@ -5,6 +5,10 @@
 #include "mux.h"
 #include "demux.h"
 #include "conversion.h"
+#include "latch.h"
+#include "jk.h"
+#include "flipflop.h"
+#include "counter.h"
 
 void setUp(void){}
 
@@ -311,6 +315,91 @@ void test_decoder_38(void){
     TEST_ASSERT_EQUAL_INT(PASS_EDT, decoder_38(&values));
     
 }
+void test_SR_latch(void) {
+    SR_lat latches;
+    // for positive values
+    latches.en=1;
+    latches.S=0;
+    latches.R=0;
+    TEST_ASSERT_EQUAL_INT(PASS_LAT, SR_latch(&latches));
+}
+void test_D_latch(void) {
+    D_lat latches;
+    // for positive values
+    latches.en=1;
+    latches.D=0;
+    TEST_ASSERT_EQUAL_INT(PASS_LAT, D_latch(&latches));
+}
+void test_JK(void) {
+    JK_LA latches;
+    // for positive values
+    latches.en=1;
+    latches.j=0;
+    latches.k=1;
+    TEST_ASSERT_EQUAL_INT(PASS_LAJ, JK(&latches));
+}
+void test_T(void) {
+    T_LA latches;
+    // for positive values
+    latches.en=1;
+    latches.t=1;
+    TEST_ASSERT_EQUAL_INT(PASS_LAJ, T(&latches));
+}
+void test_SR_FF(void) {
+    SR_ff flipflop;
+    // for positive values
+    flipflop.clk=1;
+    flipflop.S=1;
+    flipflop.R=1;
+    TEST_ASSERT_EQUAL_INT(PASS_FF, SR_FF(&flipflop));
+}
+void test_D_FF(void) {
+    D_ff flipflop;
+    // for positive values
+    flipflop.clk=1;
+    flipflop.D=1;
+    TEST_ASSERT_EQUAL_INT(PASS_FF, D_FF(&flipflop));
+}
+void test_JK_FF(void) {
+    JK_ff flipflop;
+    // for positive values
+    flipflop.clk=1;
+    flipflop.J=1;
+    flipflop.K=0;
+    TEST_ASSERT_EQUAL_INT(PASS_FF, JK_FF(&flipflop));
+}
+void test_T_FF(void) {
+    T_ff flipflop;
+    // for positive values
+    flipflop.clk=1;
+    flipflop.T=1;
+    TEST_ASSERT_EQUAL_INT(PASS_FF, T_FF(&flipflop));
+}
+void test_down_counter(void) {
+    down_count values;
+    values.n=8;
+     TEST_ASSERT_EQUAL_INT(PASS_CT, down_counter(&values));
+}
+void test_up_counter(void) {
+    up_count values;
+    values.n=5;
+     TEST_ASSERT_EQUAL_INT(PASS_CT, up_counter(&values));
+}
+void test_up_down_counter(void) {
+    up_down_count values;
+    values.n=3;
+     TEST_ASSERT_EQUAL_INT(PASS_CT, up_down_counter(&values));
+}
+void test_johnson_counter(void) {
+    johnson_count values;
+    values.n=6;
+     TEST_ASSERT_EQUAL_INT(PASS_CT, johnson_counter(&values));
+}
+void test_ring_counter(void) {
+    ring_count values;
+    values.n=2;
+     TEST_ASSERT_EQUAL_INT(PASS_CT, ring_counter(&values));
+}
 
 int main(){
     UNITY_BEGIN();
@@ -332,5 +421,18 @@ int main(){
     RUN_TEST(test_decoder_12);
     RUN_TEST(test_decoder_24);
     RUN_TEST(test_decoder_38);
+    RUN_TEST(test_SR_latch);
+    RUN_TEST(test_D_latch);
+    RUN_TEST(test_JK);
+    RUN_TEST(test_T);
+    RUN_TEST(test_SR_FF);
+    RUN_TEST(test_D_FF);
+    RUN_TEST(test_JK_FF);
+    RUN_TEST(test_T_FF);
+    RUN_TEST(test_down_counter);
+    RUN_TEST(test_up_counter);
+    RUN_TEST(test_up_down_counter);
+    RUN_TEST(test_johnson_counter);
+    RUN_TEST(test_ring_counter);
     return UNITY_END();
 }
