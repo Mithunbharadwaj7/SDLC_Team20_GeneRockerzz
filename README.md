@@ -7,7 +7,7 @@ Digital electronics is a field of electronics involving the study of digital sig
 1. Combinational Circuits
 2. Sequential Circuits
 
- 1. Combinational Circuits:
+1. Combinational Circuits:
 Combinational circuits are defined as the time independent circuits which do not depend upon previous inputs to generate any output are termed as combinational circuits. Examples are logic gates, adders and subtractors, mux and demux, enoders and decoders. Some of the features of Combinational Circuits are:
 * In this output depends only upon present input.
 * There is no feedback between input and output.
