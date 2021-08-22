@@ -1,5 +1,5 @@
-#ifndef _COUNTER_
-#define _COUNTER_
+#ifndef COUNTER_H_INCLUDED
+#define COUNTER_H_INCLUDED
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
