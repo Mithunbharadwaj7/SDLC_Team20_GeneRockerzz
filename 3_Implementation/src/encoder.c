@@ -132,9 +132,9 @@ error_edt encoder_42 (enco_42 *values){
 }
 
 error_edt encoder_83 (enco_83 *values){
-    values->Y0 = (values->X1) & (values->X3) | (values->X5) | (values->X7);
-    values->Y1 = (values->X2) & (values->X3) | (values->X6) | (values->X7);
-    values->Y2 = (values->X4) & (values->X5) | (values->X6) | (values->X7);
+    values->Y0 = (values->X1) | (values->X3) | (values->X5) | (values->X7);
+    values->Y1 = (values->X2) | (values->X3) | (values->X6) | (values->X7);
+    values->Y2 = (values->X4) | (values->X5) | (values->X6) | (values->X7);
     printf("Y0 = %d Y1 = %d Y2 = %d",values->Y0,values->Y1,values->Y2);
     if (values == NULL){
         return FAIL_EDT;
