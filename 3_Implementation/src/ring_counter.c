@@ -47,5 +47,6 @@ void ring_counter(count *values){
         printf("\n");
         p[i]=0;
     }
+    free(p);
     return 0;
 }
