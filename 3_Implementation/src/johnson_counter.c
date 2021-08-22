@@ -47,7 +47,7 @@ void johnson_counter(count *values){
         printf("%d ",ptr[j]);
     }
     printf("\n");
-    for(int i=0;i<values->n-1;i++)
+    for(int i=0;i<(values->n)-1;i++)
     {
         ptr[i]=0;
         for(int i=0;i<values->n;i++)
