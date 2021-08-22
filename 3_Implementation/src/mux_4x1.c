@@ -44,9 +44,11 @@ error_mux getDataFromFile4x1 (mux_4x1 *_values)
                                     break;
                             }
                     }
+            fclose(fp);
+            
             }
 
-    fclose(fp);
+    
 
     return 0;
 }
