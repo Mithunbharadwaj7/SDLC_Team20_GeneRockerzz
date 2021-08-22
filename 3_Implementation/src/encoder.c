@@ -1,12 +1,12 @@
 #include "conversion.h"
 
-error_en getData_5 (enco_21 *values){
+error_edt getData_5 (enco_21 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_en;
+       return FAIL_EDT;
     }
     else
     {
@@ -28,13 +28,13 @@ error_en getData_5 (enco_21 *values){
     return 0;
 }
 
-error_en getData_6 (enco_42 *values){
+error_edt getData_6 (enco_42 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_en;
+       return FAIL_EDT;
     }
     else
     {
@@ -62,13 +62,13 @@ error_en getData_6 (enco_42 *values){
     return 0;
 }
 
-error_en getData_7 (enco_83 *values){
+error_edt getData_7 (enco_83 *values){
     FILE *fp = NULL;
     fp = fopen ("encoder.txt" , "r");
     if (fp == NULL)
     {
        printf("File not found!");
-       return FAIL_en;
+       return FAIL_EDT;
     }
     else
     {
@@ -108,18 +108,18 @@ error_en getData_7 (enco_83 *values){
     return 0;
 }
 
-void encoder_21 (enco_21 *values){
+error_edt encoder_21 (enco_21 *values){
     values->Y0 = (!(values->X0))|(values->X1);
     printf("Y0 = %d",values->Y0);
 }
 
-void encoder_42 (enco_42 *values){
+error_edt encoder_42 (enco_42 *values){
     values->Y0 = (values->X3) | (values->X1) ;
     values->Y1 = (values->X3) | (values->X2) ;
     printf("Y0 = %d Y1 = %d ",values->Y0,values->Y1);
 }
 
-void encoder_83 (enco_83 *values){
+error_edt encoder_83 (enco_83 *values){
     values->Y0 = (values->X1) & (values->X3) | (values->X5) | (values->X7);
     values->Y1 = (values->X2) & (values->X3) | (values->X6) | (values->X7);
     values->Y2 = (values->X4) & (values->X5) | (values->X6) | (values->X7);
