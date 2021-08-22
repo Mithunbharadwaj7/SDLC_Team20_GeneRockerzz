@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "demux.h"
 
-error_demux getDataFromFile1 (demux_1x8 *_values){
+error_demux getDataFromFile1x8 (demux_1x8 *_values){
     FILE *fp = NULL;
     fp = fopen ("demux.txt" , "r");
     if (fp == NULL)
