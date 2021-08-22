@@ -89,6 +89,12 @@ error_edt decoder_12 (deco_12 *values){
     values->Y0 = !(values->A);
     values->Y1 = values->A;
     printf("Y0 = %d Y1 = %d ",values->Y0,values->Y1);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
 
 error_edt decoder_24 (deco_24 *values){
@@ -97,6 +103,12 @@ error_edt decoder_24 (deco_24 *values){
     values->Y2 = (values->A) & (!(values->B)) ;
     values->Y3 = (values->A) & (values->B) ;
     printf("Y0 = %d Y1 = %d Y2 = %d Y3 = %d ",values->Y0,values->Y1,values->Y2,values->Y3);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
 
 error_edt decoder_38 (deco_38 *values){
@@ -109,4 +121,10 @@ error_edt decoder_38 (deco_38 *values){
     values->Y6 = (values->A) & (values->B) & (!(values->C));
     values->Y7 = (values->A) & (values->B) & (values->C);   
     printf("Y0 = %d Y1 = %d Y2 = %d Y3 = %d Y4 = %d Y5 = %d Y6 = %d Y7 = %d ",values->Y0,values->Y1,values->Y2,values->Y3,values->Y4,values->Y5,values->Y6,values->Y7);
+    if (values == NULL){
+        return FAIL_EDT;
+    }
+    else{
+        return PASS_EDT;
+    }
 }
