@@ -27,7 +27,7 @@ error_sct getDataFromCounter(count *values)
     return 0;
 }
 
-error_sct up_counter(count *values)
+void up_counter(count *values)
     {
         for(int i=0;i<values->n;i++)
         {
