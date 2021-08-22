@@ -1,3 +1,14 @@
+/**
+ * @file flipflop.h
+ * @author Deepika and Achutha
+ * @brief A flip-flop is a device which stores a single bit of data. SR, D, JK and T flip flops are designed.
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef __FLIPFLOP_H__
 #define __FLIPFLOP_H__
 

@@ -1,3 +1,14 @@
+/**
+ * @file demux.h
+ * @author Deepika and Megha
+ * @brief 1x2, 1x4 and 1x8 demux are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef _DEMUX_
 #define _DEMUX_
 #include <stdlib.h>

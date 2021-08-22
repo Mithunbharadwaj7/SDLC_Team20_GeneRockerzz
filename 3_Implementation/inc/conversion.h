@@ -1,3 +1,16 @@
+/**
+ * @file conversion.h
+ * @author Mithun, Ambika, Sravani
+ * @brief The encoder will convert the information from one format to another format. 
+ * 2 to 1, 4 to 2 and 8 to 3 encoders are designed
+ * 1 to 2, 2 to 4 and 3 to 8 decoders are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef CONVERSION_H_INCLUDED
 #define CONVERSION_H_INCLUDED
 

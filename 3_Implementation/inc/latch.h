@@ -1,3 +1,15 @@
+/**
+ * @file latch.h
+ * @author RAviteja and Mithun (you@domain.com)
+ * @brief Latches are the basic elements for storing information.
+ * SR and D latches are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef __LATCH_H__
 #define __LATCH_H__
 

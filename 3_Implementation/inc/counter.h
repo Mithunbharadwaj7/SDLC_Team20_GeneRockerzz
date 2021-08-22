@@ -1,3 +1,15 @@
+/**
+ * @file counter.h
+ * @author Ambika, Megha and Shravani 
+ * @brief Counters are used in digital electronics for counting purpose. 
+ * Down, Up, Up-down, Johnsone nad ring counter are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef COUNTER_H_INCLUDED
 #define COUNTER_H_INCLUDED
 #include <stdlib.h>

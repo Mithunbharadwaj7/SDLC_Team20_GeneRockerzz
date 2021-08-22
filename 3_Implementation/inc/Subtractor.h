@@ -1,3 +1,14 @@
+/**
+ * @file Subtractor.h
+ * @author Achutha and Arpita
+ * @brief Subtractor subtracts two binary numbers. Half and full subtractors are designed.
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef SUBTRACTOR_H_INCLUDED
 #define SUBTRACTOR_H_INCLUDED
 

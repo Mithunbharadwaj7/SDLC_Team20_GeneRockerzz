@@ -1,3 +1,14 @@
+/**
+ * @file mux.h
+ * @author Megha and Deepika
+ * @brief 2x1, 4x1 and 8x1 mux are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef _MUX_
 #define _MUX_
 #include <stdlib.h>

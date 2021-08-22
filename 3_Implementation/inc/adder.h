@@ -1,3 +1,14 @@
+/**
+ * @file adder.h
+ * @author Arpita 
+ * @brief Adders adds two binary numbers. Half and full adders are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef __ADDER_H__
 #define __ADDER_H__
 

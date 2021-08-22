@@ -1,3 +1,15 @@
+/**
+ * @file gates.h
+ * @author Indiya and Deepika
+ * @brief Logic gates are the basic building blocks of any digital system.
+ * AND, OR, NOT, NAND, NOR, XOR and XNOR gates are designed
+ * @version 0.1
+ * @date 2021-08-22
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #ifndef _GATES_
 #define _GATES_
 #include <stdlib.h>
