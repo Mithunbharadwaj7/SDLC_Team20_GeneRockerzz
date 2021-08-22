@@ -85,7 +85,7 @@ error_mux MUX_4x1 (mux_4x1 *_values)
             printf("%d ",_values->_res_4x1);
         }
 
-    else if (_values == NULL)
+    if (_values == NULL)
         {
             return FAIL_mux;
         }

@@ -97,7 +97,7 @@ void test_MUX_2x1(void){
     _values._en = 1;
     _values._d0 = -1;
     _values._d1 = 1;
-    _values._s1 = 1;
+    _values._s1 = 0;
     _values._res_2x1;
     TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_mux, MUX_2x1(&_values));
 }
@@ -116,10 +116,10 @@ void test_MUX_4x1(void){
     TEST_ASSERT_EQUAL_INT(PASS_mux, MUX_4x1(&_values));
     // for negative values
     _values._en = 1;
-    _values._d0 = -1;
-    _values._d1 = -1;
+    _values._d0 = 1;
+    _values._d1 = 1;
     _values._s1 = 1;
-    _values._d2 = -1;
+    _values._d2 = 1;
     _values._d3 = -1;
     _values._s2 = 1;
     _values._res_4x1;
@@ -129,10 +129,10 @@ void test_MUX_4x1(void){
 void test_MUX_8x1(void){
     mux_8x1 _values;
     // for positive values
-    _values._en;
-    _values._s1;
-    _values._s2;
-    _values._s3;
+    _values._en=1;
+    _values._s1=0;
+    _values._s2=0;
+    _values._s3=1;
     _values._d0 = 1;
     _values._d1 = 1;
     _values._d2 = 1;
@@ -144,10 +144,10 @@ void test_MUX_8x1(void){
     _values._res_8x1;
     TEST_ASSERT_EQUAL_INT(PASS_mux, MUX_8x1(&_values));
     // for negative values
-    _values._en;
-    _values._s1;
-    _values._s2;
-    _values._s3;
+    _values._en=1;
+    _values._s1=1;
+    _values._s2=0;
+    _values._s3=0;
     _values._d0 = -1;
     _values._d1 = -1;
     _values._d2 = -1;
@@ -163,25 +163,19 @@ void test_MUX_8x1(void){
 void test_DEMUX_1x2(void){
     demux_1x2 _values;
     // for positive values
-    _values._en;
+    _values._en=1;
     _values._s1 = 1;
     _values._din = 1;
     _values._res1;
     _values._res2;
-    TEST_ASSERT_EQUAL_INT(PASS_mux, DEMUX_1x2(&_values));
-    // for negative values
-    _values._en;
-    _values._s1 = -1;
-    _values._din = -1;
-    _values._res1;
-    _values._res2;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_mux, DEMUX_1x2(&_values));
+    TEST_ASSERT_EQUAL_INT(PASS_demux, DEMUX_1x2(&_values));
+
 }
 
 void test_DEMUX_1x4(void){
     demux_1x4 _values;
     // for positive values
-    _values._en;
+    _values._en=1;
     _values._s1 = 1;
     _values._s2 = 1;
     _values._din = 1;
@@ -190,22 +184,13 @@ void test_DEMUX_1x4(void){
     _values._res3;
     _values._res4;
     TEST_ASSERT_EQUAL_INT(PASS_demux, DEMUX_1x4(&_values));
-    // for negative values
-    _values._en;
-    _values._s1 = -1;
-    _values._s2 = -1;
-    _values._din = -1;
-    _values._res1;
-    _values._res2;
-    _values._res3;
-    _values._res4;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_demux, DEMUX_1x4(&_values));
+    
 }
 
 void test_DEMUX_1x8(void){
     demux_1x8 _values;
     // for positive values
-    _values._en;
+    _values._en=1;
     _values._s1 = 1;
     _values._s2 = 1;
     _values._s3 = 1;
@@ -219,21 +204,6 @@ void test_DEMUX_1x8(void){
     _values._res7;
     _values._res8;
     TEST_ASSERT_EQUAL_INT(PASS_demux, DEMUX_1x8(&_values));
-    // for negative values
-    _values._en;
-    _values._s1 = -1;
-    _values._s2 = -1;
-    _values._s3 = -1;
-    _values._din = -1;
-    _values._res1;
-    _values._res2;
-    _values._res3;
-    _values._res4;
-    _values._res5;
-    _values._res6;
-    _values._res7;
-    _values._res8;
-    TEST_ASSERT_EQUAL_INT(ERR_NEGATIVE_demux, DEMUX_1x8(&_values));
 }
 
 void test_encoder_21(void){
