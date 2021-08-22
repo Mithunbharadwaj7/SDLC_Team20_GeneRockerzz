@@ -56,6 +56,6 @@ void johnson_counter(count *values){
         }
         printf("\n");
     }
-    
+    free(ptr);
     return 0;
 }
