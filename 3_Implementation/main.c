@@ -62,9 +62,9 @@ int main(){
     count data_counter;
     
     char ch = 'C';
-    printf ("\nEnter C to compute combinational circuit parameters\n"
+    printf ("\nEnter C or cto compute combinational circuit parameters\n"
              "------------------------------------------------------------------------\n"
-             "Enter S to compute sequential circuit parameters\n"
+             "Enter S or s to compute sequential circuit parameters\n"
              "------------------------------------------------------------------------\n");
     scanf("%s",&ch);
     if (ch == 'C' || ch == 'c'){
