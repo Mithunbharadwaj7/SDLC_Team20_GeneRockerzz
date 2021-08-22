@@ -62,11 +62,14 @@ Toggle (T) Flip-Flop
 
 2.A digital circuit which is used for a counting pulses is known counter. Counter is the widest application of flip-flops. It is a group of flip-flops with a clock signal applied. Counters are of two types. Asynchronous or ripple counters. Synchronous counters
 
-|Asynchronous counters |Synchronous Counters|
-|:--:|:--:|
-4 bit synchronous UP counter | 4 bit synchronous UP counter
-4 bit synchronous DOWN counter| 4 bit synchronous DOWN counter
-4 bit synchronous UP / DOWN counter| 4 bit synchronous UP / DOWN counter
+Synchronous Counters|
+|:--:
+ 4 bit  UP counter 
+ 4 bit  down couuter
+ 4 bit  up/down counter
+ n bit Johnson counter
+ n bit ring counter 
+ 
                                    
 
 
