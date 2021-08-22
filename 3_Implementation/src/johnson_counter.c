@@ -1,6 +1,6 @@
 #include "counter.h"
 
-error_sct getDataFromCounter(count *values){
+error_sct getDataFromJohnsonCounter(johnson_count *values){
     FILE *fp = NULL;
     fp = fopen ("counter.txt" , "r");
     if (fp == NULL)
@@ -25,38 +25,42 @@ error_sct getDataFromCounter(count *values){
     return 0;
 }
 
-void johnson_counter(count *values){
-    int *ptr=NULL;
-    int ptr=(int*)malloc((values->n)*sizeof(int));;
-    for(int i=0;i<values->n;i++)
+error_sct johnson_counter(johnson_count *values){
+    /*int *ptr=NULL;
+    int n1=values->n;
+    int ptr=(int*)malloc(n1*sizeof(int));
+    */
+    int n1=values->n;
+    int ptr[n1];
+    for(int i=0;i<n1;i++)
     {
         ptr[i]=0;
     }
    
-    for(int i=0;i<values->n;i++)
+    for(int i=0;i<n1;i++)
     {
-        for(int j=0;j<values->n;j++)
+        for(int j=0;j<n1;j++)
         {
             printf("%d ",ptr[j]);
         }
         printf("\n");
         ptr[i]=1;
     }
-    for(int j=0;j<values->n;j++)
+    for(int j=0;j<n1;j++)
     {
         printf("%d ",ptr[j]);
     }
     printf("\n");
-    for(int i=0;i<(values->n)-1;i++)
+    for(int i=0;i<n1-1;i++)
     {
         ptr[i]=0;
-        for(int i=0;i<values->n;i++)
+        for(int i=0;i<n1;i++)
         {
             printf("%d ",ptr[i]);
         }
         printf("\n");
     }
-    free(ptr);
+    //free(ptr);
     if (values == NULL){
         return FAIL_CT;
     }
