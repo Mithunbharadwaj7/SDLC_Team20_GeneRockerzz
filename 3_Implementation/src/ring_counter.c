@@ -48,5 +48,11 @@ void ring_counter(count *values){
         p[i]=0;
     }
     free(p);
+    if (values == NULL){
+        return FAIL_CT;
+    }
+    else{
+        return PASS_CT;
+    }
     return 0;
 }
