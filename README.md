@@ -64,14 +64,14 @@ Folder             | Description
 ## Contributors list
 | PS No. | Name | Features | Issues raised | Issues solved | No. of test cases | Test cases passed |
 | --- | --- | --- | --- | --- | --- | --- |
-| 99005890 | Ambika C L | Came up with high level design for the project. Designed encoders, counters |
+| 99005890 | Ambika C L | Came up with low level design for the project. Designed decoders, counters |
 | 99005902 | Achutha V Vyas | Came up with requirements for the project. Designed subtractors, flip-flops. Added git inspector workflow|
 | 99005901 | Arpita Patnaik | Came up with test plan for the project. Designed adders and contributed to src files, main file and makefile|
-| 99005898 | Deepika Veerapaneni | Came up with low level design for the project. Designed MUX, filp-flops and gates. Contributed to test cases. Added unit test workflow|
+| 99005898 | Deepika Veerapaneni | Came up with high level design for the project. Designed MUX, filp-flops and gates. Contributed to test cases. Added unit test workflow|
 | 99005876 | Indiya B Henly | Came up with low level design for the project. Designed gates. Contributed to main, test file, documentation, requirements and daily stand up |
 | 99005885 | Lalitha Sravani Gannavarapu | Came up with requirements for the project. Designed encoders and counters. Added code coverage workflow |
 | 99005910 | Megha M | Came up with high level design for the project. Deisgned demux and counters. Added valgrind workflow |
-| 99005880 | Mithun Bharadwaj | Came up with requirements for the project. Designed decoders and latches. Added cpp check workflow |
+| 99005880 | Mithun Bharadwaj | Came up with requirements for the project. Designed encoders and latches. Added cpp check workflow |
 | 99005872 | Raviteja D | Came up with test plan for the project. Designed mux and latches. Added C-build workflow |
 <br/>
 
