@@ -47,7 +47,7 @@ error_demux DEMUX_1x8 (demux_1x8 *_values){
         _values->_res6 = (_values->_s1) * ~(_values->_s2) * (_values->_s3) * _values->_din;
         _values->_res7 = ~(_values->_s1) * (_values->_s2) * (_values->_s3) * _values->_din;
         _values->_res8 = (_values->_s1) * (_values->_s2) * (_values->_s3) * _values->_din;
-        printf("%d %d %d %d %d %d %d %d",_values->_res1,_values->_res2,_values->_res3,_values->_res4,_values->_res5,_values->_res6,_values->_res7,_values->_res8)
+        printf("%d %d %d %d %d %d %d %d",_values->_res1,_values->_res2,_values->_res3,_values->_res4,_values->_res5,_values->_res6,_values->_res7,_values->_res8);
     }
     if(~(_values->_en)){
         _values->_res1 = _values->_res2 = _values->_res3 = _values->_res4 = _values->_res5 = _values->_res6 = _values->_res7 = _values->_res8 = 0;
