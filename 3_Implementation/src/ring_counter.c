@@ -1,6 +1,6 @@
 #include "counter.h"
 
-error_sct getDataFromCounter(count *values){
+error_sct getDataFromRingCounter(ring_count *values){
     FILE *fp = NULL;
     fp = fopen ("counter.txt" , "r");
     if (fp == NULL)
@@ -25,29 +25,31 @@ error_sct getDataFromCounter(count *values){
     return 0;
 }
 
-void ring_counter(count *values){
-    int *p=NULL;
-    int p=(int*)malloc((values->n)*sizeof(int));
-    for(int i=0;i<values->n;i++)
+error_sct ring_counter(ring_count *values){
+    //int *p=NULL;
+    int n2=values->n;
+    //int p=(int*)malloc(n2*sizeof(int));
+    int p[n2];
+    for(int i=0;i<n2;i++)
     {
         p[i]=0;
     }
     int i,j;
-    for(i=0;i<values->n;i++)
+    for(i=0;i<n2;i++)
     {
         p[i]=0;
     }
-    for(i=0;i<values->n;i++)
+    for(i=0;i<n2;i++)
     {
         p[i]=1;
-        for(j=0;j<values->n;j++)
+        for(j=0;j<n2;j++)
         {
             printf("%d ",p[j]);
         }
         printf("\n");
         p[i]=0;
     }
-    free(p);
+    //free(p);
     if (values == NULL){
         return FAIL_CT;
     }

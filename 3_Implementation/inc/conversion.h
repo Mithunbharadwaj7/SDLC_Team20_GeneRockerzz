@@ -81,15 +81,15 @@ typedef enum error_edt{
     FAIL_EDT= -1
 }error_edt;
 
-error_edt getData_2 (deco_12 *values);
-error_edt getData_3 (deco_24 *values);
-error_edt getData_4 (deco_38 *values);
+error_edt getData_12(deco_12 *values);
+error_edt getData_24(deco_24 *values);
+error_edt getData_38(deco_38 *values);
 error_edt decoder_12(deco_12 *values);
 error_edt decoder_24(deco_24 *values);
 error_edt decoder_38(deco_38 *values);
-error_edt getData_5 (enco_21 *values);
-error_edt getData_6 (enco_42 *values);
-error_edt getData_7 (enco_83 *values);
+error_edt getData_21(enco_21 *values);
+error_edt getData_42(enco_42 *values);
+error_edt getData_83(enco_83 *values);
 error_edt encoder_21(enco_21 *values);
 error_edt encoder_42(enco_42 *values);
 error_edt encoder_83(enco_83 *values);
