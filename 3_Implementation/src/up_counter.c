@@ -1,6 +1,6 @@
 #include "counter.h"
 
-error_sct getDataFromCounter(count *values)
+error_sct getDataFromUpCounter(up_count *values)
     {
         FILE *fp = NULL;
         fp = fopen ("counter.txt" , "r");
@@ -27,7 +27,7 @@ error_sct getDataFromCounter(count *values)
     return 0;
 }
 
-void up_counter(count *values)
+error_sct up_counter(up_count *values)
     {
         for(int i=0;i<values->n;i++)
         {
