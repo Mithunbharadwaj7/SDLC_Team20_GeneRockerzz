@@ -39,17 +39,17 @@ typedef struct mux_8x1{
     int _res_8x1;
 }mux_8x1;
 
-typedef enum error_t{
-    PASS = 0,
-    FAIL = -1,
-    ERR_NEGATIVE = -2
-}error_t;
+typedef enum error_mux{
+    PASS_mux = 0,
+    FAIL_mux = -1,
+    ERR_NEGATIVE_mux = -2
+}error_mux;
 
-error_t getDataFromFile2x1 (mux_2x1 *_values);
-error_t getDataFromFile4x1 (mux_4x1 *_values);
-error_t getDataFromFile8x1 (mux_8x1 *_values);
-error_t MUX_2x1 (mux_2x1 *_value);
-error_t MUX_4X1 (mux_4x1 *_value);
-error_t MUX_8X1 (mux_8x1 *_value);
+error_mux getDataFromFile2x1 (mux_2x1 *_values);
+error_mux getDataFromFile4x1 (mux_4x1 *_values);
+error_mux getDataFromFile8x1 (mux_8x1 *_values);
+error_mux MUX_2x1 (mux_2x1 *_value);
+error_mux MUX_4X1 (mux_4x1 *_value);
+error_mux MUX_8X1 (mux_8x1 *_value);
 
 #endif
