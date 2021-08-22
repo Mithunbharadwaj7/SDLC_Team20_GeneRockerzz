@@ -1,5 +1,5 @@
-#ifndef _UP_COUNT_
-#define _UP_COUNT_
+#ifndef _COUNTER_
+#define _COUNTER_
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
