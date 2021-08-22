@@ -276,7 +276,7 @@ int main(){
         }
         else if (ch == 'c'){
             getDataFromD_lat (&data_D_LATCH);
-            SR_latch(&data_D_LATCH);
+            D_latch(&data_D_LATCH);
         }
         else if (ch == 'd'){
             getDataFromT (&data_T_LATCH);
