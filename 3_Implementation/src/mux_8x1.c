@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "mux.h"
 
-error_mux getDataFromFile3(mux_8x1 *_values){
+error_mux getDataFromFile8x1 (mux_8x1 *_values){
     FILE *fp = NULL;
     fp = fopen ("mux.txt" , "r");
     if (fp == NULL)

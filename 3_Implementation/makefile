@@ -40,7 +40,7 @@ src/dtb.c
 
 TEST_SRC = \
 test/unity.c \
-test/test.c\
+test/test.c \
 
 
 INC = \

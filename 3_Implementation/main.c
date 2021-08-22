@@ -264,7 +264,7 @@ int main(){
                   "                                          | p : DOWN counter\n"
                   "                                          | q : UP-DOWN counter\n"
                   "                                          | r : JOHNSON counter\n"
-                  "                                          | s : RING decoder\n");
+                  "                                          | s : RING counter\n");
         scanf("%s",&ch);
         if (ch == 'a'){
             getDataFromSR_lat(&data_SR_LATCH);
