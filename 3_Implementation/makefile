@@ -35,7 +35,8 @@ src/mux_8x1.c \
 src/ring_counter.c \
 src/Subtractor.c \
 src/up_counter.c \
-src/up_down_counter.c
+src/up_down_counter.c\
+src\dtb.c
 
 TEST_SRC = \
 test/unity.c \
