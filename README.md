@@ -66,7 +66,7 @@ Folder             | Description
 | --- | --- | --- | --- | --- | --- | --- |
 | 99005890 | Ambika C L | Came up with low level design for the project. Designed decoders, counters |
 | 99005902 | Achutha V Vyas | Came up with requirements for the project. Designed subtractors, flip-flops. Added git inspector workflow|
-| 99005901 | Arpita Patnaik | Came up with test plan for the project. Designed adders and contributed to src files, main file and makefile|
+| 99005901 | Arpita Patnaik | Came up with test plan for the project. Designed adders and contributed to src files, main file,test file and makefile|
 | 99005898 | Deepika Veerapaneni | Came up with high level design for the project. Designed MUX, filp-flops and gates. Contributed to test cases. Added unit test workflow|
 | 99005876 | Indiya B Henly | Came up with low level design for the project. Designed gates. Contributed to main, test file, documentation, requirements and daily stand up |
 | 99005885 | Lalitha Sravani Gannavarapu | Came up with requirements for the project. Designed encoders and counters. Added code coverage workflow |
