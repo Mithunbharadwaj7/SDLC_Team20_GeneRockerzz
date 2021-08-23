@@ -51,8 +51,12 @@ The NOR gate is a NOT-OR circuit which is equivalent to an OR circuit followed b
 ![Screenshot (38)](https://user-images.githubusercontent.com/80388673/130080938-d2b891ba-3e55-4c24-8133-873c38976384.png)
 
 
+# Mux-DeMux
+
+**4x1 Mux**
+
 **TRUTH TABLE**  
 
-![Screenshot (38)](https://user-images.githubusercontent.com/67791507/130348114-195505ee-31c6-4ffc-a415-785fdc1ced23.jpg)
+![Screenshot (39)](https://user-images.githubusercontent.com/67791507/130348114-195505ee-31c6-4ffc-a415-785fdc1ced23.jpg)
 
 
