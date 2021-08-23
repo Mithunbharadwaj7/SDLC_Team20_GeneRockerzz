@@ -70,7 +70,7 @@ Folder             | Description
 | 99005898 | Deepika Veerapaneni | Came up with high level design for the project. Designed MUX, filp-flops and gates. Contributed to test cases. Added unit test workflow|
 | 99005876 | Indiya B Henly | Came up with low level design for the project. Designed gates. Contributed to main, test file, documentation, requirements and daily stand up |
 | 99005885 | Lalitha Sravani Gannavarapu | Came up with requirements for the project. Designed encoders and counters. Added code coverage workflow |
-| 99005910 | Megha M | Came up with high level design for the project. Deisgned demux and counters. Added valgrind workflow |
+| 99005910 | Megha M | Came up with low level design for the project. Deisgned demux and counters. Added valgrind workflow |
 | 99005880 | Mithun Bharadwaj | Came up with requirements for the project. Designed encoders and latches. Added cpp check workflow |
 | 99005872 | Raviteja D | Came up with test plan for the project. Designed mux and latches. Added C-build workflow |
 <br/>
