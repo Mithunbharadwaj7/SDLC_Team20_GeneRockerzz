@@ -1,21 +1,19 @@
-name: cppcheck-action-test
-on: [push]
+name: Code Quality - Static Code - Cppcheck
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
-    name: cppcheck-test
+  cppcheck:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-          
-      - name: cppcheck
-        uses: deep5050/cppcheck-action@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN}}
-          
-        
-      - name: publish report    
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: cppcheck 3_Implementation/
+    - uses: actions/checkout@v2
+    - name: Install cppcheck
+      run: sudo apt -y install cppcheck
+    - name: Run cppcheck
+      run: cppcheck 3_Implementation
