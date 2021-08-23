@@ -85,7 +85,7 @@ Folder             | Description
 <br/>
 
 ## Running the program
-Navigate to the directory containing this project after cloning from the terminal and run the following command:
+Navigate to the directory containing this project after cloning from the terminal. Add inputs to the .txt file and run the following commands:
 * `make run` to execute the main program and get the output
 * `make test` to run all the test cases and shows PASS or FAIL results
 
