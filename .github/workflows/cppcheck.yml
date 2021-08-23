@@ -18,4 +18,4 @@ jobs:
         uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: 3_Implementation/
+          BRANCH_NAME: cppcheck 3_Implementation/
